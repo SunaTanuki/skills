@@ -12,8 +12,8 @@ def normalize_text(text: str) -> str:
 
 def parse_rank_from_text(text: str) -> int | None:
     """
-    行先頭のランク番号をパースする。
-    例: "1 agent-tools toolshell/skills 11.4K" -> 1, "717 apify-trend-analysis" -> 717
+    Parse the rank number at the beginning of the line.
+    Example: "1 agent-tools toolshell/skills 11.4K" -> 1, "717 apify-trend-analysis" -> 717
     """
     t = normalize_text(text)
     m = re.match(r"^(\d+)\s", t)
@@ -51,13 +51,13 @@ def find_candidate_cards(soup: BeautifulSoup) -> list[Tag]:
     """
     candidates: list[Tag] = []
 
-    # skills.sh上の skill詳細リンク候補
+    # Skill detail link candidates on skills.sh
     for a in soup.find_all("a", href=True):
         href = a["href"]
 
-        # skill detail page らしいパターンを緩く判定
-        # owner/repo の形式なので "/" から始まり、さらに / が含まれるか等を判定できるが、
-        # まずは除外リストで対応
+        # Loosely determine patterns that look like skill detail pages
+        # Since it's in the format owner/repo, we can check if it starts with "/" and contains another "/",
+        # but for now, we'll handle it with an exclusion list.
         if href.startswith("/"):
             if any(x in href for x in ["/trending", "/docs", "/audits", "/hot", "/search"]):
                 continue
@@ -66,7 +66,7 @@ def find_candidate_cards(soup: BeautifulSoup) -> list[Tag]:
             if text:
                 candidates.append(a)
 
-    # 重複除去
+    # Deduplication
     unique: list[Tag] = []
     seen = set()
     for c in candidates:
@@ -87,16 +87,16 @@ def extract_card_data(card: Tag) -> dict | None:
     if not text:
         return None
 
-    # titleやinstallが混ざった文字列になっている場合がある
-    # 実際によくある例: "agent-tools toolshell/skills 12.3K"
+    # The string might be a mix of title and install count
+    # Common real-world example: "agent-tools toolshell/skills 12.3K"
     
-    # href から復元。URL は owner/repo の2段階か、owner/collection/skill の3段階の両方に対応
+    # Restore from href. Supports both 2-part (owner/repo) and 3-part (owner/collection/skill) URLs.
     developer = None
     title = None
     href = card.get("href", "")
     parts = [p for p in href.split("/") if p]
     if len(parts) >= 3:
-        # 例: /toolshell/skills/agent-tools → developer=toolshell, title=agent-tools
+        # Example: /toolshell/skills/agent-tools -> developer=toolshell, title=agent-tools
         developer = parts[0]
         title = parts[-1]
     elif len(parts) == 2:
@@ -108,14 +108,14 @@ def extract_card_data(card: Tag) -> dict | None:
     if not title:
         title = text
 
-    # hrefからdeveloperが取れなかった場合は諦めるかtextから探す
+    # If the developer couldn't be obtained from href, we'd give up or search from text.
     if not developer:
         return None
 
-    # install を近傍から探す
+    # Look for the install count in the nearby text
     install_count = parse_install_count(text)
     
-    # aタグの内部が分かれている場合、親を見る
+    # If the inside of the anchor tag is divided, check the parent
     parent_text = ""
     if card.parent and isinstance(card.parent, Tag):
         parent_text = normalize_text(card.parent.get_text(" ", strip=True))
@@ -131,7 +131,8 @@ def extract_card_data(card: Tag) -> dict | None:
     if not title or not developer or install_count is None:
         return None
 
-    # ランク番号は行先頭の数値（# 列）。親要素のテキストから取る場合がある
+    # The rank number is the number at the beginning of the line (the # column). 
+    # It might be fetched from the parent element's text.
     rank = parse_rank_from_text(text)
     if rank is None and parent_text:
         rank = parse_rank_from_text(parent_text)
@@ -148,8 +149,8 @@ def extract_card_data(card: Tag) -> dict | None:
 
 def validate_rank_consistency(items: list[dict]) -> dict:
     """
-    抽出データのランクが 1 から連番になっているか検証する。
-    仮想リストで別の範囲を取得していると min(rank) > 1 になる。
+    Verify if the extracted data's rank starts sequentially from 1.
+    If a different range is fetched in a virtual list, min(rank) will be > 1.
     Returns {"valid": bool, "errors": list, "rank_min": int|None, "rank_max": int|None}
     """
     errors: list[str] = []
@@ -175,7 +176,7 @@ def validate_rank_consistency(items: list[dict]) -> dict:
 
 def validate_structure(html_content: str) -> dict:
     """
-    Check if the HTML has extractable structure.
+    Check if the HTML has an extractable structure.
     Returns {"valid": bool, "errors": list}
     """
     errors = []
@@ -228,7 +229,7 @@ def extract_data(html_content: str) -> list:
         seen.add(key)
         items.append(item)
 
-    # ランク順にソートしてから返す（1, 2, 3, ...）。同一 rank は installs 降順
+    # Sort by rank before returning (1, 2, 3, ...). If ranks are identical, sort by installs descending.
     items.sort(key=lambda x: (x.get("rank") if x.get("rank") is not None else 999999, -x["installs"]))
     return items
 

@@ -1,9 +1,9 @@
 """
-extract_trending.py の出力 JSON から統計を算出する（deterministic）。
+Calculate statistics from the JSON output of extract_trending.py (deterministic).
 
-入力: items[] (title, developer, installs)
-出力: summary, skill_ranking, keyword_ranking, developer_ranking
-AI に任せるのはこの後の「考察」「要約」のみ。
+Input: items[] (title, developer, installs)
+Output: summary, skill_ranking, keyword_ranking, developer_ranking
+Only the subsequent "interpretation" and "summary" are left to the AI.
 """
 import sys
 import json
@@ -11,11 +11,12 @@ import argparse
 from pathlib import Path
 from collections import Counter, defaultdict
 
-# 各ランキングの出力件数（上位 N 件）。0 で全件。
+# Number of top items to output for each ranking. 0 means all items.
 DEFAULT_TOP_N = 20
 
 
-# suffix に一致した語は直前の語と 2 語 phrase として結合する（意味精度向上）
+# Words matching these suffixes are merged with the preceding word into a 2-word phrase
+# (improves semantic accuracy).
 SUFFIX_PHRASE_MERGE = frozenset({
     "practices",
     "review",
@@ -31,8 +32,8 @@ def normalize_keyword(keyword: str) -> str:
 
 def split_title_to_keywords(title: str, suffix_merge: bool = False) -> list[str]:
     """
-    タイトルを '-' で分割し、同一 skill 内で重複は 1 回として返す。
-    suffix_merge が True のときのみ、特定 suffix を直前語と 2 語 phrase に結合する。
+    Split the title by '-' and return unique keywords within the same skill.
+    Only when suffix_merge is True, combine specific suffixes with the preceding word into a 2-word phrase.
     """
     raw = [normalize_keyword(p) for p in title.split("-")]
     parts = [p for p in raw if p]
@@ -182,8 +183,8 @@ def build_concentration(
     suffix_merge: bool = False,
 ) -> dict[str, float]:
     """
-    エコシステムの集中度指標を算出する。
-    share = 上位N件の installs 合計 / 全体 installs 合計（0〜1）。
+    Calculate the concentration metrics of the ecosystem.
+    share = sum of top N installs / total installs (0 to 1).
     """
     if total_installs <= 0:
         return {
@@ -334,12 +335,12 @@ if __name__ == "__main__":
         "--top",
         type=int,
         default=DEFAULT_TOP_N,
-        help="各ランキングの上位何件を出力するか (0=全件, default=%d)" % DEFAULT_TOP_N,
+        help="Number of top items to output for each ranking (0=all, default=%d)" % DEFAULT_TOP_N,
     )
     parser.add_argument(
         "--suffix-merge",
         action="store_true",
-        help="keyword で suffix phrase merge を有効にする (default: off)",
+        help="Enable suffix phrase merge for keywords (default: off)",
     )
     args = parser.parse_args()
     main(

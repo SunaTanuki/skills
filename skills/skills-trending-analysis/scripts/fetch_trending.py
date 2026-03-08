@@ -1,14 +1,3 @@
-"""
-Trending ページの HTML を Playwright で取得する。
-
-約100件のユニークなスキルを取得するため、デフォルトでビューポート高さ4000px・
-スクロールを有効にし、リストの遅延読み込みをトリガーする。
-
-仮想リストでは表示外の行は DOM から消えるため、デフォルトでは
-スクロールしながらリンクを連結し、extract と同形式の JSON を
-tmp/trending.json（キーワードありの場合は tmp/trending_<keyword>.json）に保存する。
-以降の処理（統計分析）はスクロール有無にかかわらず同じ入力ファイルを使う。
-"""
 import sys
 import argparse
 import asyncio
@@ -18,19 +7,32 @@ from pathlib import Path
 from playwright.async_api import async_playwright
 import urllib.parse
 
-# 取得目標件数（リンク数がこの値に達したら打ち切り）。スピード重視で100にすると早く終了する
+"""
+Fetch the HTML of the trending page using Playwright.
+
+In order to fetch about 100 unique skills, the default viewport height is set to 4000px,
+and scrolling is enabled to trigger lazy loading of the list.
+
+Since rows that are not visible in the viewport disappear from the DOM in virtual lists,
+the default behavior is to collect and concatenate links while scrolling, and save them
+as a JSON file in the same format as extract_trending to tmp/trending.json (or
+tmp/trending_<keyword>.json if a keyword is specified).
+Subsequent processing (statistical analysis) uses the same input file regardless of scrolling.
+"""
+
+# Target number of items to fetch (stops when link count reaches this value). Set to 100 for speed.
 TARGET_ITEM_COUNT = 100
-# スクロール最大回数（デフォルト10回）
+# Maximum number of scroll iterations (default: 10)
 MAX_SCROLL_ITERATIONS = 10
-# 高さが変わらないと判定する連続回数で打ち切り
+# Limit to stop scrolling after height remains unchanged for this many consecutive rounds
 SCROLL_NO_CHANGE_LIMIT = 5
-# ビューポート: 高さを大きくして一度に多くの要素がレンダリングされるようにする
+# Viewport: Increase height so that many elements are rendered at once
 VIEWPORT_WIDTH = 1920
 VIEWPORT_HEIGHT = 4000
 
 
 def _js_count_skill_links() -> str:
-    """DOM 内のスキル詳細リンク（/owner/skill-name 形式）の数を返す JS。"""
+    """JS to return the count of skill details links (/owner/skill-name format) in the DOM."""
     return """
     () => {
         const exclude = ['/trending', '/docs', '/audits', '/hot', '/search'];
@@ -48,7 +50,7 @@ def _js_count_skill_links() -> str:
 
 
 def _js_get_skill_links_with_text() -> str:
-    """現在 DOM にあるスキルリンクの href とテキストを返す（連結モード用）。"""
+    """Returns the href and text of skill links currently in the DOM (for concatenation mode)."""
     return """
     () => {
         const exclude = ['/trending', '/docs', '/audits', '/hot', '/search'];
@@ -68,7 +70,7 @@ def _js_get_skill_links_with_text() -> str:
 
 
 def _parse_install_count(text: str) -> int | None:
-    """テキストから install 数をパース（extract_trending と同等）。"""
+    """Parse the install count from text (equivalent to extract_trending)."""
     t = re.sub(r"\s+", " ", text).strip().lower()
     m = re.search(r"\b(\d+(?:\.\d+)?)\s*k\b", t, re.IGNORECASE)
     if m:
@@ -80,7 +82,7 @@ def _parse_install_count(text: str) -> int | None:
 
 
 def _href_text_to_item(href: str, text: str) -> dict | None:
-    """href とテキストから title, developer, installs を組み立てる。"""
+    """Assemble title, developer, and installs from href and text."""
     parts = [p for p in href.split("/") if p]
     if len(parts) >= 3:
         developer, title = parts[0], parts[-1]
@@ -100,7 +102,7 @@ async def fetch_trending_async(
     viewport_height: int | None = None,
     collect_while_scroll: bool = True,
 ) -> tuple[Path, int]:
-    """Trending ページを取得し、保存先パスと取得したスキルリンク数（または項目数）を返す。"""
+    """Fetch the trending page, return the save path and the number of acquired skill links (or item count)."""
     base_url = "https://skills.sh/trending"
     if keyword:
         url = f"{base_url}?q={urllib.parse.quote(keyword)}"
@@ -135,22 +137,22 @@ async def fetch_trending_async(
             get_links_with_text = _js_get_skill_links_with_text()
             previous_height = await page.evaluate("document.body.scrollHeight")
             no_change_count = 0
-            all_collected: dict[str, str] = {}  # href -> text（連結モード時）
+            all_collected: dict[str, str] = {}  # href -> text (in concatenation mode)
 
             if limit > 0:
                 print(f"Scrolling to load more items (target >= {TARGET_ITEM_COUNT}, max {limit} rounds)...")
             for i in range(limit):
-                # 連結モード: 各位置で現在 DOM にあるリンクを収集
+                # Concatenation mode: collect links currently in the DOM at each position
                 if collect_while_scroll:
                     links = await page.evaluate(get_links_with_text)
                     for x in links:
                         all_collected[x["href"]] = x["text"]
 
-                # 一度に下までスクロール
+                # Scroll down to the bottom at once
                 await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
                 await page.wait_for_timeout(1500)
 
-                # 少し上に戻してから再び下まで（Intersection Observer 系のトリガー用）
+                # Scroll up slightly, then to the bottom again (for Intersection Observer triggers)
                 await page.evaluate("window.scrollBy(0, -400)")
                 await page.wait_for_timeout(300)
                 await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
@@ -177,7 +179,7 @@ async def fetch_trending_async(
                     print(f"  Reached max scroll iterations ({limit}).")
 
             if collect_while_scroll:
-                # 連結した href+text から item を組み立て（extract と同形式の JSON）
+                # Assemble items from concatenated href+text (same JSON format as extract)
                 items: list[dict] = []
                 seen: set[tuple[str, str]] = set()
                 for href, text in all_collected.items():
@@ -196,8 +198,8 @@ async def fetch_trending_async(
                 await browser.close()
                 return (file_path, len(items))
 
-            # 仮想リストでは描画されている行だけ DOM に存在する。保存前に先頭へスクロールし、
-            # ランク上位（トレンド先頭）の行が DOM に描画されるようにする。
+            # Virtual lists keep only rendered rows in the DOM. Scroll to the top before saving
+            # so that top-ranking items (start of trending) are rendered in the DOM.
             await page.evaluate("window.scrollTo(0, 0)")
             await page.wait_for_timeout(2000)
 
@@ -214,14 +216,16 @@ async def fetch_trending_async(
         await browser.close()
         return (file_path, final_count)
 
+
 def fetch_trending(
     keyword: str = None,
     max_scrolls: int | None = None,
     viewport_height: int | None = None,
     collect_while_scroll: bool = True,
 ) -> tuple[Path, int]:
-    """Trending ページを取得し、保存先パスと取得したスキルリンク数（または項目数）を返す。"""
+    """Fetch the trending page, return the save path and the number of acquired skill links (or item count)."""
     return asyncio.run(fetch_trending_async(keyword, max_scrolls, viewport_height, collect_while_scroll))
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Fetch trending skills from skills.sh")
@@ -231,6 +235,4 @@ if __name__ == "__main__":
     parser.add_argument("--no-collect-while-scroll", action="store_true", help="Disable: save HTML after scrolling to top (fewer items, extract step needed)")
     args = parser.parse_args()
     collect_while_scroll = not args.no_collect_while_scroll
-    path, count = fetch_trending(args.keyword, args.max_scrolls, args.viewport_height, collect_while_scroll)
-    # 終了コードは従来どおり（呼び出し元が path のみを期待している場合は path で十分）
-    # count は実験スクリプトなどで利用可能
+    path, count = fetch_trending(args.keyword, args.max_scrolls, args.viewport_height, collect_while_scroll)    

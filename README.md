@@ -1,25 +1,25 @@
 # AI Agent Skills
 
-このリポジトリは、AIエージェント向けの **Skill（スキル）** を公開・管理するためのコレクションです。
+This repository is a collection for publishing and managing **Skills** for AI agents.
 
-各 Skill は特定のタスクを実行するための **再利用可能な知識・ワークフロー・ツールのパッケージ**です。
+Each Skill is a **reusable package of knowledge, workflows, and tools** designed to execute specific tasks.
 
-Skill はフォルダごとに独立しており、個別に利用・インストールできます。
+Skills are independent by folder and can be used or installed individually.
 
 ---
 
-# このリポジトリについて
+# About This Repository
 
-このプロジェクトでは以下を目的としています。
+The objectives of this project are:
 
-- AIエージェントの実用的な Skill を公開する
-- 再現性のあるワークフローとして設計する
-- スクリプト・分析・データ取得などのタスクを自動化する
-- Skill エコシステムの実験と共有を行う
+- Publish practical Skills for AI agents
+- Design them as reproducible workflows
+- Automate tasks such as scripting, analysis, and data fetching
+- Experiment with and share the Skill ecosystem
 
-多くの Skill は **Pythonスクリプト + 明確な処理パイプライン**として設計されています。
+Many Skills are designed as a **Python script + explicit processing pipeline**.
 
-例:
+Example:
 
 fetch
 ↓
@@ -31,34 +31,30 @@ analyze
 ↓
 report
 
-このように処理を分離することで、
+By separating processes in this way, we aim to design Skills that:
 
-- デバッグしやすい
-- 再利用しやすい
-- AI の誤推論を防ぐ
-
-設計を目指しています。
+- Are easy to debug
+- Are highly reusable
+- Prevent erroneous inferences by the AI
 
 ---
 
-# Skill 一覧
+# Skill List
 
-このリポジトリでは、Skill をフォルダ単位で管理しています。
+In this repository, Skills are managed by folder.
 
 ## skills-trending-analysis
 
-skills.sh のトレンドスキルを取得し、
+A Skill that fetches trending skills from skills.sh and generates:
 
-- スキルランキング
-- キーワード分析
-- 開発者ランキング
-- エコシステム分析
+- Skill rankings
+- Keyword analysis
+- Developer rankings
+- Ecosystem analysis
 
-を生成する Skill。
+It can be used for trend analysis and observing the Skill ecosystem.
 
-トレンド分析や Skill エコシステムの観察に使用できます。
-
-フォルダ:
+Folder:
 
 `skills/skills-trending-analysis/`
 
@@ -66,17 +62,17 @@ skills.sh のトレンドスキルを取得し、
 
 ## page-streaming
 
-※概要記載予定（ページ単位、ストリーミング関連の Skill）
+*Description pending (Skill related to page units and streaming)*
 
-フォルダ:
+Folder:
 
 `skills/page-streaming/`
 
 ---
 
-# Skill 構成
+# Skill Structure
 
-各 Skill は基本的に以下の構造を持ちます。
+Each Skill basically has the following structure:
 
 skills/<skill-name>/
 ├─ SKILL.md
@@ -89,58 +85,53 @@ skills/<skill-name>/
 
 ### SKILL.md
 
-AIエージェント向けの実行仕様。
+Execution specifications for AI agents.
 
-- 何をする Skill か
-- 実行方法
-- 入出力仕様
-- エラー処理
-
-を定義します。
+Defines:
+- What the Skill does
+- How to execute it
+- Input/output specifications
+- Error handling
 
 ### README.md
 
-人間向けの説明。
+Explanation for humans.
 
 ### scripts/
 
-実際の処理を行うスクリプト。
+Scripts that perform the actual processing.
 
 ### evals/
 
-Skill の評価・検証用ファイル。
+Files for evaluation and validation of the Skill.
 
 ---
 
-# 設計思想
+# Design Philosophy
 
-このリポジトリの Skill は、次の原則で設計されています。
+The Skills in this repository are designed with the following principles in mind:
 
-## 1. AI とコードの責務分離
+## 1. Separation of Responsibilities between AI and Code
 
-数値処理・統計処理などの **決定的処理はコードで行う**。
+**Deterministic processing**, such as numerical and statistical processing, **is handled by code**.
 
-AI は主に
+The AI is mainly responsible for:
 
-- 要約
-- 解釈
-- 説明
+- Summarization
+- Interpretation
+- Explanation
 
-を担当します。
+This ensures:
 
-これにより
-
-- 再現性
-- 精度
-- 安定性
-
-を確保します。
+- Reproducibility
+- Accuracy
+- Stability
 
 ---
 
-## 2. 構造チェック
+## 2. Structural Validation
 
-外部データを扱う Skill は必ず
+Skills that handle external data always follow this structure:
 
 fetch
 ↓
@@ -148,51 +139,47 @@ validate
 ↓
 extract
 
-の構造を持ちます。
-
-HTML構造などが変わった場合は **抽出を停止**し、誤ったデータ生成を防ぎます。
+If HTML structures or other data formats change, the Skill **halts extraction** to prevent the generation of incorrect data.
 
 ---
 
-## 3. 再現可能な実行環境
+## 3. Reproducible Execution Environment
 
-Skill は可能な限り **独立した実行環境**で動作するように設計されています。
+Skills are designed to run in an **independent execution environment** as much as possible.
 
-多くの場合:
+In most cases, it uses:
 
 - Python
-- 仮想環境 `.venv`
+- Virtual environment `.venv`
 - requirements.txt
-
-を使用します。
 
 ---
 
-# 利用方法
+# Usage
 
-各 Skill は `npx skills add` コマンドでインストールできます。
+Each Skill can be installed using the `npx skills add` command.
 
-### 全部入れる場合
+### Install All
 
 ```bash
 npx skills add tmiyano89/skills
 ```
 
-### 個別に入れる場合（例）
+### Install Individually (Example)
 
 ```bash
-npx skills add tmiyano89/skills/skills/skills-trending-analysis
+npx skills add tmiyano89/skills --skill skills-trending-analysis
 ```
 
 ---
 
-# ライセンス
+# License
 
 MIT License
 
 ---
 
-# 作者
+# Author
 
 t.miyano
 

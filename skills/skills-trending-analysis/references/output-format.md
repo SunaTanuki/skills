@@ -1,15 +1,15 @@
-# 出力フォーマット（AI 最終要約）
+# Output Format (Final AI Summary)
 
-このファイルは、SKILL.md の「AI が行う最終要約」で生成するレポートのフォーマットと生成ルールを定義する。
+This file defines the format and generation rules for the report produced in the "Final Summary by AI" section of SKILL.md.
 
-統計値の根拠は **analyze_trending.py の出力 JSON** に限る。  
-AI は **数値の再計算を行わない**。
+The basis for statistical values is strictly limited to the **JSON output of analyze_trending.py**.  
+The AI must **not recalculate numerical values**.
 
 ---
 
-# レポート構成
+# Report Structure
 
-レポートは以下のセクションで構成する。
+The report consists of the following sections:
 
 1. **Trending summary**
 2. **Top skills**
@@ -17,172 +17,172 @@ AI は **数値の再計算を行わない**。
 4. **Developer ranking**
 5. **Ecosystem analysis**
 
-セクション順序は必ず維持する。
+The section order must be maintained.
 
 ---
 
 # 1. Trending summary
 
-トレンドの概要を **3〜6項目程度の箇条書き**で説明する。
+Explain the overview of the trends using **around 3 to 6 bullet points**.
 
-内容例:
+Content examples:
 
-- 主流技術
-- 人気トピック
-- 新しいカテゴリ
-- install 数が集中している分野
+- Mainstream technologies
+- Popular topics
+- New categories
+- Areas concentrating a high number of installs
 
-ルール:
+Rules:
 
-- 数値は summary / ranking から引用する
-- keyword や skill 名を具体的に示す
-- 推測ではなく **観測結果に基づく説明**にする
+- Quote numbers from summary / ranking
+- Specifically name keywords and skills
+- Use **explanations based on observation**, not guesses
 
-例:
+Examples:
 
-- エージェント系ツールが上位を占める
-- design / ui 関連の keyword が多い
-- image / generator 系のスキルが人気
+- Agent-based tools occupy the top ranks
+- Many keywords relate to design / ui
+- Image / generator related skills are popular
 
 ---
 
 # 2. Top skills
 
-`skill_ranking` を元に、**installs 上位 N 件**を表形式で表示する。
+Display the **top N skills by installs** in a table format, based on `skill_ranking`.
 
-表形式:
+Table format:
 
 | Rank | Title | Developer | Installs |
 |-----|------|------|------|
 
-件数は analyze_trending.py の出力に基づく。
+The number of items is based on the output of analyze_trending.py.
 
-ルール:
+Rules:
 
-- installs 降順
-- title / developer / installs をそのまま引用
-- AI が順位を変更してはならない
+- Descending order by installs
+- Quote title / developer / installs exactly as they are
+- The AI must not alter the rankings
 
-表のあとに **1〜2文の短い説明**を付ける。
+Add a **short 1-2 sentence description** after the table.
 
-例:
+Examples:
 
-- 上位スキルはエージェント関連ツールが多い
-- 画像生成・動画生成スキルも人気
+- The top skills feature many agent-related tools
+- Image and video generation skills are also popular
 
 ---
 
 # 3. Keyword ranking
 
-`keyword_ranking_by_installs`  
-`keyword_ranking_by_skill_count`
+Use **both** of the following:
 
-の **両方を使用する**。
+- `keyword_ranking_by_installs`
+- `keyword_ranking_by_skill_count`
 
-## installs ベースランキング
-
-| Rank | Keyword | Skill count | Total installs |
-
-件数は analyze_trending.py の出力に基づく。
-
-## skill_count ベースランキング
+## Ranking by Installs
 
 | Rank | Keyword | Skill count | Total installs |
 
-件数は analyze_trending.py の出力に基づく。
+The number of items is based on the output of analyze_trending.py.
 
-ルール:
+## Ranking by Skill Count
 
-- keyword は analyze_trending.py の出力をそのまま使用
-- デフォルトはタイトルの `-` 単純分割（--suffix-merge 指定時のみ phrase 結合）
-- AI が keyword を独自に再構成しない
+| Rank | Keyword | Skill count | Total installs |
 
-表のあとに **2〜3文の解釈**を書く。
+The number of items is based on the output of analyze_trending.py.
 
-例:
+Rules:
 
-- design / ui が多く、UI 系スキル需要が高い
-- generator / image など生成系が人気
+- Use the keywords exactly as output by analyze_trending.py
+- Default is a simple split of the title by `-` (phrase merging only when --suffix-merge is specified)
+- The AI must not independently reconstruct keywords
+
+Write an **interpretation of 2-3 sentences** after the tables.
+
+Examples:
+
+- With many instances of design / ui, there is a high demand for UI-related skills
+- Generative types like generator / image are popular
 
 ---
 
 # 4. Developer ranking
 
-`developer_ranking` を使用する。
+Use `developer_ranking`.
 
-表形式:
+Table format:
 
 | Rank | Developer | Skill count | Total installs | Top keywords |
 
-件数は analyze_trending.py の出力に基づく。
+The number of items is based on the output of analyze_trending.py.
 
-Top keywords は `top_keywords` をそのまま表示する。
+Display `top_keywords` exactly as it is.
 
-その後、各 developer の傾向を **1行で説明**する。
+After that, explain the tendencies of each developer in **one line**.
 
-説明は以下を参考にする:
+Consider the following for the explanation:
 
 - top_keywords
 - top_skills_by_installs
 
-例:
+Examples:
 
-toolshell — エージェント・画像生成・UI 系スキル
-trailofbits — セキュリティ・監査ツール
+toolshell — Agent, image generation, and UI skills
+trailofbits — Security and auditing tools
 
-ルール:
+Rules:
 
-- keyword の意味的グループ化は許可
-- installs の数値は変更しない
+- Semantic grouping of keywords is permitted
+- Do not alter the numerical value of installs
 
 ---
 
 # 5. Ecosystem analysis
 
-全体の傾向を **4〜6文程度でまとめる**。
+Summarize the overall trends in **about 4 to 6 sentences**.
 
-参照する情報:
+Information to reference:
 
 - summary
 - keyword ranking
 - developer ranking
 - concentration
 
-含める観点:
+Perspectives to include:
 
-### 集中と分散
+### Concentration and Distribution
 
-`concentration` 指標を使って説明する。
+Explain using the `concentration` metrics.
 
-例:
+Examples:
 
 - top_10_skill_install_share
 - top_10_developer_install_share
 
-### 技術テーマ
+### Technical Themes
 
-例:
+Examples:
 
 - agent
 - design
 - image-generation
 - data
 
-### エコシステム構造
+### Ecosystem Structure
 
-例:
+Examples:
 
-- 多様な developer が存在
-- 特定 developer の集中
-- 新しいカテゴリの出現
+- A diverse range of developers exist
+- Concentration among specific developers
+- Emergence of new categories
 
 ---
 
-# 数値引用ルール
+# Rules for Quoting Numbers
 
-数値は **analyze_trending.py の出力 JSON** から引用する。
+Quote numerical values from the **JSON output of analyze_trending.py**.
 
-使用可能なデータ:
+Available data:
 
 - summary
 - skill_ranking
@@ -191,40 +191,40 @@ trailofbits — セキュリティ・監査ツール
 - developer_ranking
 - concentration
 
-AI は以下をしてはならない:
+The AI must NOT do the following:
 
-- installs を再計算する
-- ranking を再生成する
-- keyword を再分割する
+- Recalculate installs
+- Regenerate rankings
+- Re-split keywords
 
 ---
 
-# 事実と解釈の分離
+# Separation of Fact and Interpretation
 
-レポートでは **事実と解釈を混同しない**。
+**Do not confuse facts with interpretations** in the report.
 
-事実:
+Facts:
 
 - installs
-- ranking
+- rankings
 - keyword counts
 - developer counts
 
-解釈:
+Interpretations:
 
-- 技術トレンド
-- 人気カテゴリ
-- エコシステム構造
+- Tech trends
+- Popular categories
+- Ecosystem structure
 
-事実を提示した後に解釈を書く。
+Present the facts first, followed by the interpretation.
 
 ---
 
-# 最終注記
+# Final Note
 
-レポートの最後に必ず以下を記載する。
+Always include the following statement at the end of the report:
 
-本レポートの数値・ランキングはすべて analyze_trending.py の出力に基づく。
+All numerical values and rankings in this report are based on the output of analyze_trending.py.
 
 
 ⸻
