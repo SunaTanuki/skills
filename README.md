@@ -60,7 +60,17 @@ skills.sh のトレンドスキルを取得し、
 
 フォルダ:
 
-skills-trending-analysis/
+`skills/skills-trending-analysis/`
+
+---
+
+## page-streaming
+
+※概要記載予定（ページ単位、ストリーミング関連の Skill）
+
+フォルダ:
+
+`skills/page-streaming/`
 
 ---
 
@@ -68,11 +78,12 @@ skills-trending-analysis/
 
 各 Skill は基本的に以下の構造を持ちます。
 
-skill-name/
+skills/<skill-name>/
 ├─ SKILL.md
 ├─ README.md
 ├─ requirements.txt
 ├─ scripts/
+├─ references/
 ├─ evals/
 └─ examples/
 
@@ -159,11 +170,19 @@ Skill は可能な限り **独立した実行環境**で動作するように設
 
 # 利用方法
 
-各 Skill のフォルダに移動し、README または SKILL.md を参照してください。
+各 Skill は `npx skills add` コマンドでインストールできます。
 
-例:
+### 全部入れる場合
 
-cd skills-trending-analysis
+```bash
+npx skills add tmiyano89/skills
+```
+
+### 個別に入れる場合（例）
+
+```bash
+npx skills add tmiyano89/skills/skills/skills-trending-analysis
+```
 
 ---
 
