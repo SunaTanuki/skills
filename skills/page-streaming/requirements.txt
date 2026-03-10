@@ -1,0 +1,3 @@
+# page-streaming: 動的ページ取得（Playwright）
+playwright>=1.40.0
+

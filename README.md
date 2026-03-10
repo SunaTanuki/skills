@@ -62,7 +62,9 @@ Folder:
 
 ## page-streaming
 
-*Description pending (Skill related to page units and streaming)*
+A common observation Skill to fetch dynamic web pages **synchronously**.
+It opens a URL using Playwright, executes an optional arbitrary init script, and then continuously captures up to N pages, dividing content such as infinitely scrolling pages into page units for efficient analysis.
+It can also detect the page type and retry with optimized fetching strategies.
 
 Folder:
 
