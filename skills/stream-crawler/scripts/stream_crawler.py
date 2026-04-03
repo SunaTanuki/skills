@@ -451,6 +451,9 @@ async def run_crawler(
     step_wait_ms: int,
     settle_timeout_ms: int,
     init_script: str | None,
+    fast: bool = False,
+    wait_selector: str | None = None,
+    wait_selector_timeout_ms: int = 10000,
 ) -> None:
     session_path = _session_path(session_dir)
     (session_path / "pages").mkdir(parents=True, exist_ok=True)
@@ -465,12 +468,17 @@ async def run_crawler(
 
     curl_html: str | None = None
     curl_clues: dict | None = None
-    try:
-        curl_html = _fetch_url_curl(url)
-        (session_path / "curl.html").write_text(curl_html, encoding="utf-8", errors="replace")
-        curl_clues = analyze_html(curl_html, url=url)
-    except Exception as exc:
-        _log(session_path, f"DetectPrepFailed: {exc}")
+    curl_error: str | None = None
+    if not fast:
+        try:
+            curl_html = _fetch_url_curl(url)
+            (session_path / "curl.html").write_text(curl_html, encoding="utf-8", errors="replace")
+            curl_clues = analyze_html(curl_html, url=url)
+        except Exception as exc:
+            curl_error = str(exc)
+            _log(session_path, f"DetectPrepFailed: {exc}")
+    else:
+        curl_error = "skipped in fast mode"
 
     async with async_playwright() as playwright:
         browser = await playwright.chromium.launch(headless=True)
@@ -483,7 +491,13 @@ async def run_crawler(
 
         try:
             await page.goto(url, wait_until="domcontentloaded", timeout=30000)
-            await page.wait_for_timeout(wait_ms)
+            if wait_selector:
+                try:
+                    await page.wait_for_selector(wait_selector, state="attached", timeout=wait_selector_timeout_ms)
+                except Exception as exc:
+                    _log(session_path, f"WaitSelectorTimeout: {exc}")
+            else:
+                await page.wait_for_timeout(wait_ms)
             if init_script:
                 url = await _run_init(page, init_script, session_path, url)
 
@@ -516,6 +530,19 @@ async def run_crawler(
                     },
                 )
                 _log(session_path, f"TypeDetected type={content_type} behaviors={behaviors}")
+            else:
+                _write_json(
+                    session_path / "page_type.json",
+                    {
+                        "url": page.url,
+                        "content_delivery_type": "unknown",
+                        "behaviors": [],
+                        "reasons": [curl_error or "curl_clues missing"],
+                        "curl": {"error": curl_error or "unknown error"},
+                        "playwright": {"page_index": 1, "text_len": initial_state["observation"]["text_len"]},
+                    },
+                )
+                _log(session_path, "TypeDetected type=unknown (curl skipped or failed)")
 
             for page_index in range(2, max_pages + 1):
                 growth_state, trigger = await _find_growth(
@@ -565,7 +592,9 @@ def main() -> None:
         default=DEFAULT_SETTLE_TIMEOUT_MS,
         help="Max ms to wait for growth to stop",
     )
-    parser.add_argument("--fast", action="store_true", help="Fast mode: only fetch page 1 without scrolling")
+    parser.add_argument("--fast", action="store_true", help="Fast mode: skip curl detection and only fetch page 1")
+    parser.add_argument("--wait-selector", type=str, default=None, help="Selector to wait for before capturing (e.g. 'meta[property=\"og:image\"]')")
+    parser.add_argument("--wait-selector-timeout-ms", type=int, default=10000, help="Timeout in ms for wait-selector")
     parser.add_argument("--init-script", type=str, default=None, metavar="JS_OR_PATH")
     args = parser.parse_args()
 
@@ -593,6 +622,9 @@ def main() -> None:
             step_wait_ms=args.step_wait_ms,
             settle_timeout_ms=args.settle_timeout_ms,
             init_script=init_script,
+            fast=args.fast,
+            wait_selector=args.wait_selector,
+            wait_selector_timeout_ms=args.wait_selector_timeout_ms,
         )
     )
 

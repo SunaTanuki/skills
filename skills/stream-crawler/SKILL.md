@@ -42,13 +42,14 @@ python scripts/stream_crawler.py \
   --session-dir "<output_directory>/example"
 ```
 
-Fast fetch (only fetch page 1 without scrolling):
+Fast fetch (only fetch page 1 without scrolling, wait for OGP image):
 
 ```bash
 python scripts/stream_crawler.py \
   --url "https://example.com/target" \
   --session-dir "<output_directory>/example" \
-  --fast
+  --fast \
+  --wait-selector 'meta[property="og:image"]'
 ```
 
 Outputs to check:
