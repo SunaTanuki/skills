@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stream-crawler"
+version = "0.1.0"
+description = "Use Playwright to capture URLs"
+requires-python = ">=3.9"
+dependencies = [
+    "playwright>=1.40,<2"
+]
+
+[project.scripts]
+stream-crawler = "scripts.stream_crawler:main"
+
+[tool.setuptools.packages.find]
+include = ["scripts*"]

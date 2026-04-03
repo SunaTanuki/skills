@@ -15,7 +15,10 @@ from pathlib import Path
 
 from playwright.async_api import async_playwright
 
-from detect_page_type import analyze_html, classify
+try:
+    from .detect_page_type import analyze_html, classify
+except ImportError:
+    from detect_page_type import analyze_html, classify
 
 DEFAULT_LOAD_WAIT_MS = 2500
 DEFAULT_VIEWPORT_WIDTH = 1440
