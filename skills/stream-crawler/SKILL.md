@@ -21,7 +21,7 @@ cd <skill_directory>
 python3 --version
 python3 -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
+pip install .
 playwright install chromium
 ```
 
@@ -40,6 +40,20 @@ Normal fetch:
 python scripts/stream_crawler.py \
   --url "https://example.com/list" \
   --session-dir "<output_directory>/example"
+```
+
+Bulk fetch (multiple URLs reusing browser context):
+
+```bash
+cat << 'EOF' > urls.txt
+https://example.com/list1
+https://example.com/list2
+EOF
+
+python scripts/stream_crawler.py \
+  --urls urls.txt \
+  --session-dir "<output_directory>/bulk" \
+  --quiet-errors
 ```
 
 Fast fetch (only fetch page 1 without scrolling, wait for OGP image):
