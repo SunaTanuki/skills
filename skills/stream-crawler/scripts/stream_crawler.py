@@ -444,7 +444,8 @@ async def _find_growth(page, previous_state: dict, *, coarse_margin_px: int, fin
     return None, None
 
 
-async def run_crawler(
+async def _process_single_url(
+    context,
     url: str,
     session_dir: str,
     wait_ms: int,
@@ -487,6 +488,128 @@ async def run_crawler(
     else:
         curl_error = "skipped in fast mode"
 
+    page = await context.new_page()
+    last_json_path: Path | None = None
+
+    try:
+        try:
+            await page.goto(url, wait_until="domcontentloaded", timeout=30000)
+        except Exception as goto_exc:
+            _log(session_path, f"GotoFailed: {goto_exc}")
+            _write_json(
+                session_path / "page_type.json",
+                {
+                    "url": url,
+                    "content_delivery_type": "unknown",
+                    "behaviors": [],
+                    "reasons": [curl_error or "curl_clues missing", "playwright_goto_failed"],
+                    "curl": {"error": curl_error or "unknown error"},
+                    "playwright": {"error": str(goto_exc).splitlines()[0]},
+                },
+            )
+            if curl_error and "skipped" not in curl_error:
+                raise RuntimeError(f"URL Unreachable (curl: {curl_error.splitlines()[0]}, playwright: {str(goto_exc).splitlines()[0]})") from None
+            raise RuntimeError(f"GotoFailed: {str(goto_exc).splitlines()[0]}") from None
+
+        if wait_selector:
+            try:
+                await page.wait_for_selector(wait_selector, state="attached", timeout=wait_selector_timeout_ms)
+            except Exception as exc:
+                _log(session_path, f"WaitSelectorTimeout: {exc}")
+        else:
+            await page.wait_for_timeout(wait_ms)
+            
+        if init_script:
+            url = await _run_init(page, init_script, session_path, url)
+
+        initial_state = await _inspect_view(page)
+        last_json_path = await _save_snapshot(
+            page,
+            session_path,
+            1,
+            page.url,
+            initial_state,
+            {"mode": "initial", "step_index": 0, "reasons": ["initial capture"], "polls": 0},
+        )
+
+        previous_state = initial_state
+        if curl_clues is not None:
+            content_type, reasons, behaviors = classify(curl_clues, initial_state["observation"]["text_len"])
+            _write_json(
+                session_path / "page_type.json",
+                {
+                    "url": page.url,
+                    "content_delivery_type": content_type,
+                    "behaviors": behaviors,
+                    "reasons": reasons,
+                    "curl": {
+                        "body_text_len": curl_clues.get("body_text_len"),
+                        "html_len": curl_clues.get("html_len"),
+                        "script_chunk_count": curl_clues.get("script_chunk_count"),
+                    },
+                    "playwright": {"page_index": 1, "text_len": initial_state["observation"]["text_len"]},
+                },
+            )
+            _log(session_path, f"TypeDetected type={content_type} behaviors={behaviors}")
+        else:
+            _write_json(
+                session_path / "page_type.json",
+                {
+                    "url": page.url,
+                    "content_delivery_type": "unknown",
+                    "behaviors": [],
+                    "reasons": [curl_error or "curl_clues missing"],
+                    "curl": {"error": curl_error or "unknown error"},
+                    "playwright": {"page_index": 1, "text_len": initial_state["observation"]["text_len"]},
+                },
+            )
+            _log(session_path, "TypeDetected type=unknown (curl skipped or failed)")
+
+        for page_index in range(2, max_pages + 1):
+            growth_state, trigger = await _find_growth(
+                page,
+                previous_state,
+                coarse_margin_px=coarse_margin_px,
+                fine_step_px=fine_step_px,
+                poll_ms=step_wait_ms,
+                timeout_ms=settle_timeout_ms,
+                max_steps=max_steps_per_page,
+                session_path=session_path,
+                page_index=page_index,
+            )
+            if growth_state is None:
+                if last_json_path is not None:
+                    _mark_terminal(last_json_path)
+                _log(session_path, f"Stop: no additional content before page_{page_index:04d}")
+                break
+
+            last_json_path = await _save_snapshot(page, session_path, page_index, page.url, growth_state, trigger)
+            previous_state = growth_state
+            _log(session_path, f"Captured page_{page_index:04d} mode={trigger['mode']} reasons={trigger['reasons']}")
+    finally:
+        await page.close()
+
+
+
+async def run_crawler(
+    urls: list[str],
+    session_dir: str,
+    wait_ms: int,
+    viewport_width: int,
+    viewport_height: int,
+    max_pages: int,
+    max_steps_per_page: int,
+    coarse_margin_px: int,
+    fine_step_px: int,
+    step_wait_ms: int,
+    settle_timeout_ms: int,
+    init_script: str | None,
+    fast: bool = False,
+    wait_selector: str | None = None,
+    wait_selector_timeout_ms: int = 10000,
+    ignore_https_errors: bool = False,
+) -> None:
+    from playwright.async_api import async_playwright
     async with async_playwright() as playwright:
         browser = await playwright.chromium.launch(headless=True)
         context = await browser.new_context(
@@ -494,111 +617,32 @@ async def run_crawler(
             user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36",
             ignore_https_errors=ignore_https_errors,
         )
-        page = await context.new_page()
-        last_json_path: Path | None = None
 
-        try:
+        for url in urls:
+            session_path = _session_path(session_dir)
+            if len(urls) > 1:
+                url_hash = hashlib.md5(url.encode()).hexdigest()[:12]
+                session_path = session_path / url_hash
+
             try:
-                await page.goto(url, wait_until="domcontentloaded", timeout=30000)
-            except Exception as goto_exc:
-                _log(session_path, f"GotoFailed: {goto_exc}")
-                _write_json(
-                    session_path / "page_type.json",
-                    {
-                        "url": url,
-                        "content_delivery_type": "unknown",
-                        "behaviors": [],
-                        "reasons": [curl_error or "curl_clues missing", "playwright_goto_failed"],
-                        "curl": {"error": curl_error or "unknown error"},
-                        "playwright": {"error": str(goto_exc).splitlines()[0]},
-                    },
+                await _process_single_url(
+                    context, url, str(session_path), wait_ms, viewport_width, viewport_height,
+                    max_pages, max_steps_per_page, coarse_margin_px, fine_step_px,
+                    step_wait_ms, settle_timeout_ms, init_script, fast, wait_selector, wait_selector_timeout_ms, ignore_https_errors
                 )
-                if curl_error and "skipped" not in curl_error:
-                    raise RuntimeError(f"URL Unreachable (curl: {curl_error.splitlines()[0]}, playwright: {str(goto_exc).splitlines()[0]})") from None
-                raise RuntimeError(f"GotoFailed: {str(goto_exc).splitlines()[0]}") from None
-
-            if wait_selector:
-                try:
-                    await page.wait_for_selector(wait_selector, state="attached", timeout=wait_selector_timeout_ms)
-                except Exception as exc:
-                    _log(session_path, f"WaitSelectorTimeout: {exc}")
-            else:
-                await page.wait_for_timeout(wait_ms)
-                
-            if init_script:
-                url = await _run_init(page, init_script, session_path, url)
-
-            initial_state = await _inspect_view(page)
-            last_json_path = await _save_snapshot(
-                page,
-                session_path,
-                1,
-                page.url,
-                initial_state,
-                {"mode": "initial", "step_index": 0, "reasons": ["initial capture"], "polls": 0},
-            )
-
-            previous_state = initial_state
-            if curl_clues is not None:
-                content_type, reasons, behaviors = classify(curl_clues, initial_state["observation"]["text_len"])
-                _write_json(
-                    session_path / "page_type.json",
-                    {
-                        "url": page.url,
-                        "content_delivery_type": content_type,
-                        "behaviors": behaviors,
-                        "reasons": reasons,
-                        "curl": {
-                            "body_text_len": curl_clues.get("body_text_len"),
-                            "html_len": curl_clues.get("html_len"),
-                            "script_chunk_count": curl_clues.get("script_chunk_count"),
-                        },
-                        "playwright": {"page_index": 1, "text_len": initial_state["observation"]["text_len"]},
-                    },
-                )
-                _log(session_path, f"TypeDetected type={content_type} behaviors={behaviors}")
-            else:
-                _write_json(
-                    session_path / "page_type.json",
-                    {
-                        "url": page.url,
-                        "content_delivery_type": "unknown",
-                        "behaviors": [],
-                        "reasons": [curl_error or "curl_clues missing"],
-                        "curl": {"error": curl_error or "unknown error"},
-                        "playwright": {"page_index": 1, "text_len": initial_state["observation"]["text_len"]},
-                    },
-                )
-                _log(session_path, "TypeDetected type=unknown (curl skipped or failed)")
-
-            for page_index in range(2, max_pages + 1):
-                growth_state, trigger = await _find_growth(
-                    page,
-                    previous_state,
-                    coarse_margin_px=coarse_margin_px,
-                    fine_step_px=fine_step_px,
-                    poll_ms=step_wait_ms,
-                    timeout_ms=settle_timeout_ms,
-                    max_steps=max_steps_per_page,
-                    session_path=session_path,
-                    page_index=page_index,
-                )
-                if growth_state is None:
-                    if last_json_path is not None:
-                        _mark_terminal(last_json_path)
-                    _log(session_path, f"Stop: no additional content before page_{page_index:04d}")
-                    break
-
-                last_json_path = await _save_snapshot(page, session_path, page_index, page.url, growth_state, trigger)
-                previous_state = growth_state
-                _log(session_path, f"Captured page_{page_index:04d} mode={trigger['mode']} reasons={trigger['reasons']}")
-        finally:
-            await browser.close()
-
+            except Exception as exc:
+                if len(urls) > 1:
+                    import sys
+                    print(f"Error on {url}: {str(exc).splitlines()[0]}", file=sys.stderr)
+                else:
+                    raise
+            
+        await browser.close()
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="stream-crawler: Fetch list pages in stages prioritizing success rate")
-    parser.add_argument("--url", required=True, help="URL to fetch")
+    parser.add_argument("--url", default=None, help="URL to fetch")
+    parser.add_argument("--urls", default=None, help="File containing list of URLs to fetch (- for stdin)")
     parser.add_argument("--session-dir", default="session", help="Output directory")
     parser.add_argument("--wait-ms", type=int, default=DEFAULT_LOAD_WAIT_MS, help="Wait ms after initial load")
     parser.add_argument("--viewport-width", type=int, default=DEFAULT_VIEWPORT_WIDTH)
@@ -627,6 +671,19 @@ def main() -> None:
     parser.add_argument("--init-script", type=str, default=None, metavar="JS_OR_PATH")
     args = parser.parse_args()
 
+    urls = []
+    if args.url:
+        urls.append(args.url)
+    if args.urls:
+        if args.urls == "-":
+            import sys
+            urls.extend([line.strip() for line in sys.stdin if line.strip()])
+        else:
+            with open(args.urls, "r") as f:
+                urls.extend([line.strip() for line in f if line.strip()])
+    if not urls:
+        parser.error("Must provide either --url or --urls")
+
     if args.fast:
         args.max_pages = 1
 
@@ -640,7 +697,7 @@ def main() -> None:
     try:
         asyncio.run(
             run_crawler(
-                url=args.url,
+                urls=urls,
                 session_dir=args.session_dir,
                 wait_ms=args.wait_ms,
                 viewport_width=args.viewport_width,
