@@ -1,2 +1,1 @@
-playwright
-beautifulsoup4
+requests

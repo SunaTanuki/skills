@@ -1,0 +1,5591 @@
+{
+  "ok": true,
+  "structure_valid": true,
+  "items": [
+    {
+      "title": "soultrace",
+      "developer": "soultrace-ai",
+      "installs": 31700
+    },
+    {
+      "title": "ai-image-generation",
+      "developer": "skillssh",
+      "installs": 13800
+    },
+    {
+      "title": "find-skills",
+      "developer": "vercel-labs",
+      "installs": 11600
+    },
+    {
+      "title": "memory-setup",
+      "developer": "sundial-org",
+      "installs": 4034
+    },
+    {
+      "title": "react-code-review",
+      "developer": "giuseppe-trisciuoglio",
+      "installs": 4033
+    },
+    {
+      "title": "sf-soql",
+      "developer": "jaganpro",
+      "installs": 4032
+    },
+    {
+      "title": "skillmarketplace",
+      "developer": "starchild-ai-agent",
+      "installs": 4031
+    },
+    {
+      "title": "db-migrate",
+      "developer": "medusajs",
+      "installs": 4030
+    },
+    {
+      "title": "value-prop-statements",
+      "developer": "phuryn",
+      "installs": 4029
+    },
+    {
+      "title": "pixijs-scene-core-concepts",
+      "developer": "pixijs",
+      "installs": 4028
+    },
+    {
+      "title": "nextjs-code-review",
+      "developer": "giuseppe-trisciuoglio",
+      "installs": 4027
+    },
+    {
+      "title": "pixijs-scene-dom-container",
+      "developer": "pixijs",
+      "installs": 4026
+    },
+    {
+      "title": "ansoff-matrix",
+      "developer": "phuryn",
+      "installs": 4025
+    },
+    {
+      "title": "asc-localize-metadata",
+      "developer": "rorkai",
+      "installs": 4024
+    },
+    {
+      "title": "provider-actions",
+      "developer": "hashicorp",
+      "installs": 4023
+    },
+    {
+      "title": "pixijs-scene-container",
+      "developer": "pixijs",
+      "installs": 4021
+    },
+    {
+      "title": "context-engineering-collection",
+      "developer": "muratcankoylan",
+      "installs": 4020
+    },
+    {
+      "title": "aws-lambda-python-integration",
+      "developer": "giuseppe-trisciuoglio",
+      "installs": 4019
+    },
+    {
+      "title": "draft-nda",
+      "developer": "phuryn",
+      "installs": 4018
+    },
+    {
+      "title": "aws-sdk-java-v2-core",
+      "developer": "giuseppe-trisciuoglio",
+      "installs": 4017
+    },
+    {
+      "title": "color-palette",
+      "developer": "jezweb",
+      "installs": 4015
+    },
+    {
+      "title": "aoti-debug",
+      "developer": "pytorch",
+      "installs": 4014
+    },
+    {
+      "title": "get-api-docs",
+      "developer": "andrewyng",
+      "installs": 4013
+    },
+    {
+      "title": "ink",
+      "developer": "vercel-labs",
+      "installs": 4012
+    },
+    {
+      "title": "add-uint-support",
+      "developer": "pytorch",
+      "installs": 4011
+    },
+    {
+      "title": "emilkowal-animations",
+      "developer": "pproenca",
+      "installs": 4010
+    },
+    {
+      "title": "byted-mediakit-voiceover-editing",
+      "developer": "site",
+      "installs": 4009
+    },
+    {
+      "title": "job-stories",
+      "developer": "phuryn",
+      "installs": 4008
+    },
+    {
+      "title": "write-guide",
+      "developer": "vercel",
+      "installs": 4007
+    },
+    {
+      "title": "skill-creator",
+      "developer": "vercel-labs",
+      "installs": 4006
+    },
+    {
+      "title": "spring-boot-actuator",
+      "developer": "giuseppe-trisciuoglio",
+      "installs": 4005
+    },
+    {
+      "title": "spring-boot-security-jwt",
+      "developer": "giuseppe-trisciuoglio",
+      "installs": 4004
+    },
+    {
+      "title": "aws-ami-builder",
+      "developer": "hashicorp",
+      "installs": 4003
+    },
+    {
+      "title": "change-request",
+      "developer": "anthropics",
+      "installs": 4002
+    },
+    {
+      "title": "valibot",
+      "developer": "open-circle",
+      "installs": 4001
+    },
+    {
+      "title": "new-user",
+      "developer": "medusajs",
+      "installs": 4000
+    },
+    {
+      "title": "atxp",
+      "developer": "atxp-dev",
+      "installs": 3999
+    },
+    {
+      "title": "wiremock-standalone-docker",
+      "developer": "giuseppe-trisciuoglio",
+      "installs": 3998
+    },
+    {
+      "title": "auth-wechat-miniprogram",
+      "developer": "tencentcloudbase",
+      "installs": 3997
+    },
+    {
+      "title": "aws-sdk-java-v2-bedrock",
+      "developer": "giuseppe-trisciuoglio",
+      "installs": 3996
+    },
+    {
+      "title": "nextjs-deployment",
+      "developer": "giuseppe-trisciuoglio",
+      "installs": 3995
+    },
+    {
+      "title": "react-patterns",
+      "developer": "giuseppe-trisciuoglio",
+      "installs": 3994
+    },
+    {
+      "title": "cowork-plugin-customizer",
+      "developer": "anthropics",
+      "installs": 3993
+    },
+    {
+      "title": "browser-automation",
+      "developer": "web-infra-dev",
+      "installs": 3992
+    },
+    {
+      "title": "trio",
+      "developer": "membranedev",
+      "installs": 3991
+    },
+    {
+      "title": "mailbox-power",
+      "developer": "membranedev",
+      "installs": 3990
+    },
+    {
+      "title": "test-scenarios",
+      "developer": "phuryn",
+      "installs": 3989
+    },
+    {
+      "title": "xiaohongshu-cn",
+      "developer": "site",
+      "installs": 3988
+    },
+    {
+      "title": "ralph-plan",
+      "developer": "mastra-ai",
+      "installs": 3987
+    },
+    {
+      "title": "db-generate",
+      "developer": "medusajs",
+      "installs": 3986
+    },
+    {
+      "title": "database-backup-restore",
+      "developer": "aj-geddes",
+      "installs": 3985
+    },
+    {
+      "title": "asc-workflow",
+      "developer": "rorkai",
+      "installs": 3984
+    },
+    {
+      "title": "angular-di",
+      "developer": "analogjs",
+      "installs": 3983
+    },
+    {
+      "title": "antv-g2-chart",
+      "developer": "antvis",
+      "installs": 3981
+    },
+    {
+      "title": "nextjs-app-router",
+      "developer": "giuseppe-trisciuoglio",
+      "installs": 3980
+    },
+    {
+      "title": "apollo-server",
+      "developer": "apollographql",
+      "installs": 3979
+    },
+    {
+      "title": "angular-routing",
+      "developer": "analogjs",
+      "installs": 3978
+    },
+    {
+      "title": "enrich-lead",
+      "developer": "anthropics",
+      "installs": 3977
+    },
+    {
+      "title": "pixijs-scene-mesh",
+      "developer": "pixijs",
+      "installs": 3976
+    },
+    {
+      "title": "mongodb-mcp-setup",
+      "developer": "mongodb",
+      "installs": 3975
+    },
+    {
+      "title": "positioning-ideas",
+      "developer": "phuryn",
+      "installs": 3974
+    },
+    {
+      "title": "zero-trust-architecture",
+      "developer": "aj-geddes",
+      "installs": 3973
+    },
+    {
+      "title": "imagegen",
+      "developer": "openai",
+      "installs": 3972
+    },
+    {
+      "title": "mobile-first-design",
+      "developer": "aj-geddes",
+      "installs": 3971
+    },
+    {
+      "title": "cmux-browser",
+      "developer": "manaflow-ai",
+      "installs": 3970
+    },
+    {
+      "title": "element-plus-vue3",
+      "developer": "teachingai",
+      "installs": 3969
+    },
+    {
+      "title": "asc-shots-pipeline",
+      "developer": "rorkai",
+      "installs": 3968
+    },
+    {
+      "title": "nuqs",
+      "developer": "pproenca",
+      "installs": 3967
+    },
+    {
+      "title": "vulnerability-scanning",
+      "developer": "aj-geddes",
+      "installs": 3966
+    },
+    {
+      "title": "dummy-dataset",
+      "developer": "phuryn",
+      "installs": 3965
+    },
+    {
+      "title": "sequence-load",
+      "developer": "anthropics",
+      "installs": 3964
+    },
+    {
+      "title": "mantine-form",
+      "developer": "mantinedev",
+      "installs": 3963
+    },
+    {
+      "title": "aussie-business-english",
+      "developer": "jezweb",
+      "installs": 3962
+    },
+    {
+      "title": "infographic-creator",
+      "developer": "antvis",
+      "installs": 3961
+    },
+    {
+      "title": "tiktok-captions",
+      "developer": "kostja94",
+      "installs": 3960
+    },
+    {
+      "title": "pixijs-events",
+      "developer": "pixijs",
+      "installs": 3959
+    },
+    {
+      "title": "scvi-tools",
+      "developer": "anthropics",
+      "installs": 3958
+    },
+    {
+      "title": "xiaohongshu-cli",
+      "developer": "jackwener",
+      "installs": 3957
+    },
+    {
+      "title": "spring-boot-crud-patterns",
+      "developer": "giuseppe-trisciuoglio",
+      "installs": 3956
+    },
+    {
+      "title": "aws-rds-spring-boot-integration",
+      "developer": "giuseppe-trisciuoglio",
+      "installs": 3955
+    },
+    {
+      "title": "outcome-roadmap",
+      "developer": "phuryn",
+      "installs": 3953
+    },
+    {
+      "title": "football-data",
+      "developer": "machina-sports",
+      "installs": 3952
+    },
+    {
+      "title": "metal-kernel",
+      "developer": "pytorch",
+      "installs": 3951
+    },
+    {
+      "title": "scientific-problem-selection",
+      "developer": "anthropics",
+      "installs": 3950
+    },
+    {
+      "title": "manim-composer",
+      "developer": "adithya-s-k",
+      "installs": 3949
+    },
+    {
+      "title": "aws-lambda-typescript-integration",
+      "developer": "giuseppe-trisciuoglio",
+      "installs": 3948
+    },
+    {
+      "title": "pricing-strategy",
+      "developer": "phuryn",
+      "installs": 3947
+    },
+    {
+      "title": "aws-lambda-java-integration",
+      "developer": "giuseppe-trisciuoglio",
+      "installs": 3946
+    },
+    {
+      "title": "brainstorm-experiments-new",
+      "developer": "phuryn",
+      "installs": 3945
+    },
+    {
+      "title": "mixin-pattern",
+      "developer": "patternsdev",
+      "installs": 3944
+    },
+    {
+      "title": "signature-request",
+      "developer": "anthropics",
+      "installs": 3943
+    },
+    {
+      "title": "user-personas",
+      "developer": "phuryn",
+      "installs": 3942
+    },
+    {
+      "title": "cohort-analysis",
+      "developer": "phuryn",
+      "installs": 3941
+    },
+    {
+      "title": "metrics-review",
+      "developer": "anthropics",
+      "installs": 3940
+    },
+    {
+      "title": "vendor-check",
+      "developer": "anthropics",
+      "installs": 3939
+    },
+    {
+      "title": "opportunity-solution-tree",
+      "developer": "phuryn",
+      "installs": 3938
+    },
+    {
+      "title": "academic-paper",
+      "developer": "imbad0202",
+      "installs": 3937
+    },
+    {
+      "title": "asc-build-lifecycle",
+      "developer": "rorkai",
+      "installs": 3936
+    },
+    {
+      "title": "math-olympiad",
+      "developer": "anthropics",
+      "installs": 3935
+    },
+    {
+      "title": "instrument-data-to-allotrope",
+      "developer": "anthropics",
+      "installs": 3934
+    },
+    {
+      "title": "appwrite-typescript",
+      "developer": "appwrite",
+      "installs": 3933
+    },
+    {
+      "title": "progressive-hydration",
+      "developer": "patternsdev",
+      "installs": 3932
+    },
+    {
+      "title": "pipeline-review",
+      "developer": "anthropics",
+      "installs": 3931
+    },
+    {
+      "title": "skill-writer",
+      "developer": "pytorch",
+      "installs": 3930
+    },
+    {
+      "title": "prioritization-frameworks",
+      "developer": "phuryn",
+      "installs": 3929
+    },
+    {
+      "title": "nextjs-data-fetching",
+      "developer": "giuseppe-trisciuoglio",
+      "installs": 3928
+    },
+    {
+      "title": "value-proposition",
+      "developer": "phuryn",
+      "installs": 3927
+    },
+    {
+      "title": "pr-review",
+      "developer": "pytorch",
+      "installs": 3926
+    },
+    {
+      "title": "swift-architecture-skill",
+      "developer": "efremidze",
+      "installs": 3925
+    },
+    {
+      "title": "spring-boot-cache",
+      "developer": "giuseppe-trisciuoglio",
+      "installs": 3924
+    },
+    {
+      "title": "sentry-sdk-setup",
+      "developer": "getsentry",
+      "installs": 3923
+    },
+    {
+      "title": "release-notes",
+      "developer": "phuryn",
+      "installs": 3922
+    },
+    {
+      "title": "performance-report",
+      "developer": "anthropics",
+      "installs": 3921
+    },
+    {
+      "title": "pixijs-create",
+      "developer": "pixijs",
+      "installs": 3920
+    },
+    {
+      "title": "agent-browser",
+      "developer": "site",
+      "installs": 3919
+    },
+    {
+      "title": "lemlist",
+      "developer": "membranedev",
+      "installs": 3918
+    },
+    {
+      "title": "runpodctl",
+      "developer": "runpod",
+      "installs": 3917
+    },
+    {
+      "title": "product-strategy",
+      "developer": "phuryn",
+      "installs": 3634
+    },
+    {
+      "title": "core-data-expert",
+      "developer": "avdlee",
+      "installs": 3633
+    },
+    {
+      "title": "model-usage",
+      "developer": "steipete",
+      "installs": 3632
+    },
+    {
+      "title": "create-prd",
+      "developer": "phuryn",
+      "installs": 3631
+    },
+    {
+      "title": "day2-mcp-and-context-sync",
+      "developer": "ai-native-camp",
+      "installs": 3630
+    },
+    {
+      "title": "blogwatcher",
+      "developer": "steipete",
+      "installs": 3629
+    },
+    {
+      "title": "gh-address-comments",
+      "developer": "openai",
+      "installs": 3628
+    },
+    {
+      "title": "day1-test-skill",
+      "developer": "ai-native-camp",
+      "installs": 3627
+    },
+    {
+      "title": "customer-research",
+      "developer": "anthropics",
+      "installs": 3626
+    },
+    {
+      "title": "view-transitions",
+      "developer": "patternsdev",
+      "installs": 3625
+    },
+    {
+      "title": "sprint-planning",
+      "developer": "anthropics",
+      "installs": 3624
+    },
+    {
+      "title": "mcp-builder",
+      "developer": "jezweb",
+      "installs": 3623
+    },
+    {
+      "title": "gh-issues",
+      "developer": "steipete",
+      "installs": 3622
+    },
+    {
+      "title": "figma",
+      "developer": "openai",
+      "installs": 3621
+    },
+    {
+      "title": "bencium-controlled-ux-designer",
+      "developer": "bencium",
+      "installs": 3620
+    },
+    {
+      "title": "update-docs",
+      "developer": "vercel",
+      "installs": 3618
+    },
+    {
+      "title": "storefront-best-practices",
+      "developer": "medusajs",
+      "installs": 3617
+    },
+    {
+      "title": "kb-article",
+      "developer": "anthropics",
+      "installs": 3616
+    },
+    {
+      "title": "github",
+      "developer": "steipete",
+      "installs": 3615
+    },
+    {
+      "title": "add-molab-badge",
+      "developer": "marimo-team",
+      "installs": 3614
+    },
+    {
+      "title": "prpl",
+      "developer": "patternsdev",
+      "installs": 3613
+    },
+    {
+      "title": "stock-research-executor",
+      "developer": "liangdabiao",
+      "installs": 3612
+    },
+    {
+      "title": "day1-onboarding",
+      "developer": "ai-native-camp",
+      "installs": 3611
+    },
+    {
+      "title": "renaissance-architecture",
+      "developer": "bencium",
+      "installs": 3610
+    },
+    {
+      "title": "strategy-compare",
+      "developer": "marketcalls",
+      "installs": 3609
+    },
+    {
+      "title": "slack",
+      "developer": "steipete",
+      "installs": 3608
+    },
+    {
+      "title": "brand-review",
+      "developer": "anthropics",
+      "installs": 3607
+    },
+    {
+      "title": "static-import",
+      "developer": "patternsdev",
+      "installs": 3606
+    },
+    {
+      "title": "sf-metadata",
+      "developer": "jaganpro",
+      "installs": 3605
+    },
+    {
+      "title": "skill-installer",
+      "developer": "openai",
+      "installs": 3604
+    },
+    {
+      "title": "ccc",
+      "developer": "cocoindex-io",
+      "installs": 3603
+    },
+    {
+      "title": "provider-test-patterns",
+      "developer": "hashicorp",
+      "installs": 3602
+    },
+    {
+      "title": "app-icon-optimization",
+      "developer": "eronred",
+      "installs": 3600
+    },
+    {
+      "title": "singleton-pattern",
+      "developer": "patternsdev",
+      "installs": 3599
+    },
+    {
+      "title": "sandbox-sdk",
+      "developer": "site",
+      "installs": 3598
+    },
+    {
+      "title": "pixijs-math",
+      "developer": "pixijs",
+      "installs": 3597
+    },
+    {
+      "title": "server-side-rendering",
+      "developer": "patternsdev",
+      "installs": 3596
+    },
+    {
+      "title": "sentry-feature-setup",
+      "developer": "getsentry",
+      "installs": 3595
+    },
+    {
+      "title": "write-api-reference",
+      "developer": "vercel",
+      "installs": 3594
+    },
+    {
+      "title": "human-architect-mindset",
+      "developer": "bencium",
+      "installs": 3593
+    },
+    {
+      "title": "negentropy-lens",
+      "developer": "bencium",
+      "installs": 3592
+    },
+    {
+      "title": "prototype-pattern",
+      "developer": "patternsdev",
+      "installs": 3591
+    },
+    {
+      "title": "create-an-asset",
+      "developer": "anthropics",
+      "installs": 3590
+    },
+    {
+      "title": "topic-monitor",
+      "developer": "sundial-org",
+      "installs": 3589
+    },
+    {
+      "title": "flyweight-pattern",
+      "developer": "patternsdev",
+      "installs": 3588
+    },
+    {
+      "title": "vanity-engineering-review",
+      "developer": "bencium",
+      "installs": 3587
+    },
+    {
+      "title": "metrics-dashboard",
+      "developer": "phuryn",
+      "installs": 3586
+    },
+    {
+      "title": "recruiting-pipeline",
+      "developer": "anthropics",
+      "installs": 3585
+    },
+    {
+      "title": "discord",
+      "developer": "steipete",
+      "installs": 3584
+    },
+    {
+      "title": "remotion-best-practices",
+      "developer": "vercel-labs",
+      "installs": 3583
+    },
+    {
+      "title": "notion",
+      "developer": "steipete",
+      "installs": 3582
+    },
+    {
+      "title": "session-analyzer",
+      "developer": "ai-native-camp",
+      "installs": 3581
+    },
+    {
+      "title": "oracle",
+      "developer": "steipete",
+      "installs": 3580
+    },
+    {
+      "title": "swot-analysis",
+      "developer": "phuryn",
+      "installs": 3579
+    },
+    {
+      "title": "compound",
+      "developer": "ai-native-camp",
+      "installs": 3578
+    },
+    {
+      "title": "statistical-analysis",
+      "developer": "anthropics",
+      "installs": 3577
+    },
+    {
+      "title": "status-report",
+      "developer": "anthropics",
+      "installs": 3576
+    },
+    {
+      "title": "data-context-extractor",
+      "developer": "anthropics",
+      "installs": 3575
+    },
+    {
+      "title": "camsnap",
+      "developer": "steipete",
+      "installs": 3574
+    },
+    {
+      "title": "transformers-js",
+      "developer": "huggingface",
+      "installs": 3573
+    },
+    {
+      "title": "goal-planner",
+      "developer": "recallnet",
+      "installs": 3572
+    },
+    {
+      "title": "wechatpay-product-coupon",
+      "developer": "wechatpay-apiv3",
+      "installs": 3571
+    },
+    {
+      "title": "develop-web-game",
+      "developer": "openai",
+      "installs": 3570
+    },
+    {
+      "title": "runbook",
+      "developer": "anthropics",
+      "installs": 3569
+    },
+    {
+      "title": "nextjs-authentication",
+      "developer": "giuseppe-trisciuoglio",
+      "installs": 3568
+    },
+    {
+      "title": "bazi-mingli",
+      "developer": "wolke",
+      "installs": 3567
+    },
+    {
+      "title": "peekaboo",
+      "developer": "steipete",
+      "installs": 3566
+    },
+    {
+      "title": "agentic-ux-design---relationship-centric-interfaces",
+      "developer": "bencium",
+      "installs": 3565
+    },
+    {
+      "title": "campaign-plan",
+      "developer": "anthropics",
+      "installs": 3564
+    },
+    {
+      "title": "i18n",
+      "developer": "lobehub",
+      "installs": 3563
+    },
+    {
+      "title": "convex-file-storage",
+      "developer": "waynesutton",
+      "installs": 3562
+    },
+    {
+      "title": "fastify-best-practices",
+      "developer": "mcollina",
+      "installs": 3560
+    },
+    {
+      "title": "forecast",
+      "developer": "anthropics",
+      "installs": 3559
+    },
+    {
+      "title": "policy-lookup",
+      "developer": "anthropics",
+      "installs": 3558
+    },
+    {
+      "title": "userinterface-wiki",
+      "developer": "raphaelsalaja",
+      "installs": 3557
+    },
+    {
+      "title": "meta-ads",
+      "developer": "kostja94",
+      "installs": 3556
+    },
+    {
+      "title": "angular-forms",
+      "developer": "analogjs",
+      "installs": 3555
+    },
+    {
+      "title": "vibe-security",
+      "developer": "raroque",
+      "installs": 3554
+    },
+    {
+      "title": "competitive-brief",
+      "developer": "anthropics",
+      "installs": 3553
+    },
+    {
+      "title": "chrome-devtools-cli",
+      "developer": "chromedevtools",
+      "installs": 3552
+    },
+    {
+      "title": "slack-search",
+      "developer": "anthropics",
+      "installs": 3551
+    },
+    {
+      "title": "web-scraper",
+      "developer": "guia-matthieu",
+      "installs": 3550
+    },
+    {
+      "title": "sag",
+      "developer": "steipete",
+      "installs": 3549
+    },
+    {
+      "title": "auto-updater",
+      "developer": "teylersf",
+      "installs": 3548
+    },
+    {
+      "title": "history-insight",
+      "developer": "ai-native-camp",
+      "installs": 3546
+    },
+    {
+      "title": "react-devtools",
+      "developer": "callstackincubator",
+      "installs": 3545
+    },
+    {
+      "title": "pixijs-core-concepts",
+      "developer": "pixijs",
+      "installs": 3544
+    },
+    {
+      "title": "aws-sdk-java-v2-lambda",
+      "developer": "giuseppe-trisciuoglio",
+      "installs": 3543
+    },
+    {
+      "title": "skill-creator",
+      "developer": "starchild-ai-agent",
+      "installs": 3542
+    },
+    {
+      "title": "pixijs-custom-rendering",
+      "developer": "pixijs",
+      "installs": 3541
+    },
+    {
+      "title": "gemini",
+      "developer": "steipete",
+      "installs": 3540
+    },
+    {
+      "title": "islands-architecture",
+      "developer": "patternsdev",
+      "installs": 3539
+    },
+    {
+      "title": "finance-news",
+      "developer": "sundial-org",
+      "installs": 3538
+    },
+    {
+      "title": "day4-wrap-and-analyze",
+      "developer": "ai-native-camp",
+      "installs": 3537
+    },
+    {
+      "title": "mongodb-natural-language-querying",
+      "developer": "mongodb",
+      "installs": 3536
+    },
+    {
+      "title": "nx-monorepo",
+      "developer": "giuseppe-trisciuoglio",
+      "installs": 3535
+    },
+    {
+      "title": "openai-docs",
+      "developer": "openai",
+      "installs": 3534
+    },
+    {
+      "title": "learn",
+      "developer": "giuseppe-trisciuoglio",
+      "installs": 3533
+    },
+    {
+      "title": "onboarding-optimization",
+      "developer": "eronred",
+      "installs": 3532
+    },
+    {
+      "title": "game-development",
+      "developer": "sickn33",
+      "installs": 3531
+    },
+    {
+      "title": "strapi-expert",
+      "developer": "mkshahzad77",
+      "installs": 3530
+    },
+    {
+      "title": "compression",
+      "developer": "patternsdev",
+      "installs": 3529
+    },
+    {
+      "title": "convex-migrations",
+      "developer": "waynesutton",
+      "installs": 3528
+    },
+    {
+      "title": "update-swiftui-apis",
+      "developer": "avdlee",
+      "installs": 3527
+    },
+    {
+      "title": "ant-design",
+      "developer": "ant-design",
+      "installs": 3526
+    },
+    {
+      "title": "mongodb-connection",
+      "developer": "mongodb",
+      "installs": 3525
+    },
+    {
+      "title": "reference-list-builder",
+      "developer": "paramchoudhary",
+      "installs": 3524
+    },
+    {
+      "title": "azure-observability",
+      "developer": "microsoft",
+      "installs": 3523
+    },
+    {
+      "title": "mintlify-api",
+      "developer": "site",
+      "installs": 3522
+    },
+    {
+      "title": "trigger-cost-savings",
+      "developer": "triggerdotdev",
+      "installs": 3521
+    },
+    {
+      "title": "wireframe-prototyping",
+      "developer": "aj-geddes",
+      "installs": 3520
+    },
+    {
+      "title": "clone-website",
+      "developer": "julianromli",
+      "installs": 3519
+    },
+    {
+      "title": "shadcn-ui",
+      "developer": "jezweb",
+      "installs": 3518
+    },
+    {
+      "title": "durable-objects",
+      "developer": "site",
+      "installs": 3517
+    },
+    {
+      "title": "rest-api-django",
+      "developer": "mindrally",
+      "installs": 3234
+    },
+    {
+      "title": "compliance-tracking",
+      "developer": "anthropics",
+      "installs": 3233
+    },
+    {
+      "title": "app-analytics",
+      "developer": "eronred",
+      "installs": 3232
+    },
+    {
+      "title": "vm-and-bytecode-reverse",
+      "developer": "yaklang",
+      "installs": 3231
+    },
+    {
+      "title": "user-research",
+      "developer": "anthropics",
+      "installs": 3230
+    },
+    {
+      "title": "waf-bypass-techniques",
+      "developer": "yaklang",
+      "installs": 3229
+    },
+    {
+      "title": "netlify-development",
+      "developer": "mindrally",
+      "installs": 3228
+    },
+    {
+      "title": "tts",
+      "developer": "noizai",
+      "installs": 3227
+    },
+    {
+      "title": "expo-react-native-javascript-best-practices",
+      "developer": "mindrally",
+      "installs": 3226
+    },
+    {
+      "title": "blockchain",
+      "developer": "mindrally",
+      "installs": 3225
+    },
+    {
+      "title": "building-admin-dashboard-customizations",
+      "developer": "medusajs",
+      "installs": 3224
+    },
+    {
+      "title": "pdf",
+      "developer": "openai",
+      "installs": 3223
+    },
+    {
+      "title": "architecture-decision",
+      "developer": "jwynia",
+      "installs": 3222
+    },
+    {
+      "title": "web-perf",
+      "developer": "site",
+      "installs": 3221
+    },
+    {
+      "title": "code-obfuscation-deobfuscation",
+      "developer": "yaklang",
+      "installs": 3220
+    },
+    {
+      "title": "economic-systems",
+      "developer": "jwynia",
+      "installs": 3219
+    },
+    {
+      "title": "ethereum",
+      "developer": "mindrally",
+      "installs": 3218
+    },
+    {
+      "title": "smart-contract-vulnerabilities",
+      "developer": "yaklang",
+      "installs": 3217
+    },
+    {
+      "title": "adattributionkit",
+      "developer": "dpearson2699",
+      "installs": 3216
+    },
+    {
+      "title": "vue",
+      "developer": "vercel-labs",
+      "installs": 3215
+    },
+    {
+      "title": "java-spring-development",
+      "developer": "mindrally",
+      "installs": 3214
+    },
+    {
+      "title": "governance-systems",
+      "developer": "jwynia",
+      "installs": 3213
+    },
+    {
+      "title": "revision",
+      "developer": "jwynia",
+      "installs": 3212
+    },
+    {
+      "title": "image-processing",
+      "developer": "jezweb",
+      "installs": 3211
+    },
+    {
+      "title": "clickjacking",
+      "developer": "yaklang",
+      "installs": 3210
+    },
+    {
+      "title": "game-engine",
+      "developer": "github",
+      "installs": 3209
+    },
+    {
+      "title": "pixi-js",
+      "developer": "mindrally",
+      "installs": 3208
+    },
+    {
+      "title": "electron-development",
+      "developer": "mindrally",
+      "installs": 3207
+    },
+    {
+      "title": "novel-architect",
+      "developer": "junaid18183",
+      "installs": 3206
+    },
+    {
+      "title": "bash-scripting",
+      "developer": "mindrally",
+      "installs": 3205
+    },
+    {
+      "title": "observability-guidelines",
+      "developer": "mindrally",
+      "installs": 3204
+    },
+    {
+      "title": "ios-pentesting-tricks",
+      "developer": "yaklang",
+      "installs": 3203
+    },
+    {
+      "title": "playwright-cursor-rules",
+      "developer": "mindrally",
+      "installs": 3202
+    },
+    {
+      "title": "python-uv",
+      "developer": "mindrally",
+      "installs": 3201
+    },
+    {
+      "title": "frontend-design",
+      "developer": "anthropics",
+      "installs": 3200
+    },
+    {
+      "title": "byted-seedream-image-generate",
+      "developer": "site",
+      "installs": 3200
+    },
+    {
+      "title": "business-logic-vulnerabilities",
+      "developer": "yaklang",
+      "installs": 3199
+    },
+    {
+      "title": "business-model",
+      "developer": "phuryn",
+      "installs": 3198
+    },
+    {
+      "title": "trigger-realtime",
+      "developer": "triggerdotdev",
+      "installs": 3197
+    },
+    {
+      "title": "lyric-diagnostic",
+      "developer": "jwynia",
+      "installs": 3193
+    },
+    {
+      "title": "babysit-pr",
+      "developer": "openai",
+      "installs": 3192
+    },
+    {
+      "title": "architecture-diagram",
+      "developer": "cocoon-ai",
+      "installs": 3191
+    },
+    {
+      "title": "blind-spot-detective",
+      "developer": "jwynia",
+      "installs": 3190
+    },
+    {
+      "title": "mcp-protocol-builder",
+      "developer": "bobmatnyc",
+      "installs": 3189
+    },
+    {
+      "title": "avkit",
+      "developer": "dpearson2699",
+      "installs": 3188
+    },
+    {
+      "title": "design-audit",
+      "developer": "bencium",
+      "installs": 3187
+    },
+    {
+      "title": "sentry-setup-ai-monitoring",
+      "developer": "getsentry",
+      "installs": 3186
+    },
+    {
+      "title": "app-clips",
+      "developer": "dpearson2699",
+      "installs": 3185
+    },
+    {
+      "title": "list-builder",
+      "developer": "jwynia",
+      "installs": 3184
+    },
+    {
+      "title": "non-fiction-revision",
+      "developer": "jwynia",
+      "installs": 3183
+    },
+    {
+      "title": "convex-functions",
+      "developer": "waynesutton",
+      "installs": 3182
+    },
+    {
+      "title": "chapter-drafter",
+      "developer": "jwynia",
+      "installs": 3181
+    },
+    {
+      "title": "brainstorm-ideas-new",
+      "developer": "phuryn",
+      "installs": 3180
+    },
+    {
+      "title": "sensitivity-check",
+      "developer": "jwynia",
+      "installs": 3179
+    },
+    {
+      "title": "swift-codable",
+      "developer": "dpearson2699",
+      "installs": 3178
+    },
+    {
+      "title": "summarization",
+      "developer": "jwynia",
+      "installs": 3177
+    },
+    {
+      "title": "format-string-exploitation",
+      "developer": "yaklang",
+      "installs": 3176
+    },
+    {
+      "title": "byted-web-search",
+      "developer": "site",
+      "installs": 3175
+    },
+    {
+      "title": "device-integrity",
+      "developer": "dpearson2699",
+      "installs": 3174
+    },
+    {
+      "title": "sleep-story",
+      "developer": "jwynia",
+      "installs": 3173
+    },
+    {
+      "title": "chinese-novelist",
+      "developer": "penglonghuang",
+      "installs": 3172
+    },
+    {
+      "title": "agents-sdk",
+      "developer": "site",
+      "installs": 3171
+    },
+    {
+      "title": "sveltekit",
+      "developer": "mindrally",
+      "installs": 3170
+    },
+    {
+      "title": "huggingface-llm-trainer",
+      "developer": "huggingface",
+      "installs": 3169
+    },
+    {
+      "title": "pytorch",
+      "developer": "mindrally",
+      "installs": 3168
+    },
+    {
+      "title": "prototype-pollution",
+      "developer": "yaklang",
+      "installs": 3167
+    },
+    {
+      "title": "xlsx-generator",
+      "developer": "jwynia",
+      "installs": 3165
+    },
+    {
+      "title": "abstract-strategy",
+      "developer": "jwynia",
+      "installs": 3164
+    },
+    {
+      "title": "positional-revelation",
+      "developer": "jwynia",
+      "installs": 3163
+    },
+    {
+      "title": "playwright-explore-website",
+      "developer": "github",
+      "installs": 3162
+    },
+    {
+      "title": "graphql-and-hidden-parameters",
+      "developer": "yaklang",
+      "installs": 3161
+    },
+    {
+      "title": "cliche-transcendence",
+      "developer": "jwynia",
+      "installs": 3160
+    },
+    {
+      "title": "lattice-crypto-attacks",
+      "developer": "yaklang",
+      "installs": 3159
+    },
+    {
+      "title": "react-query",
+      "developer": "mindrally",
+      "installs": 3158
+    },
+    {
+      "title": "react-server-components",
+      "developer": "patternsdev",
+      "installs": 3157
+    },
+    {
+      "title": "doc",
+      "developer": "openai",
+      "installs": 3156
+    },
+    {
+      "title": "alpine-js",
+      "developer": "mindrally",
+      "installs": 3155
+    },
+    {
+      "title": "naming",
+      "developer": "jwynia",
+      "installs": 3154
+    },
+    {
+      "title": "hoc-pattern",
+      "developer": "patternsdev",
+      "installs": 3153
+    },
+    {
+      "title": "postcss-best-practices",
+      "developer": "mindrally",
+      "installs": 3152
+    },
+    {
+      "title": "playwriter",
+      "developer": "remorses",
+      "installs": 3151
+    },
+    {
+      "title": "academic-writing",
+      "developer": "jamditis",
+      "installs": 3150
+    },
+    {
+      "title": "energykit",
+      "developer": "dpearson2699",
+      "installs": 3149
+    },
+    {
+      "title": "llm",
+      "developer": "mindrally",
+      "installs": 3148
+    },
+    {
+      "title": "trigger-setup",
+      "developer": "triggerdotdev",
+      "installs": 3147
+    },
+    {
+      "title": "trigger-tasks",
+      "developer": "triggerdotdev",
+      "installs": 3146
+    },
+    {
+      "title": "activitykit",
+      "developer": "dpearson2699",
+      "installs": 3145
+    },
+    {
+      "title": "research",
+      "developer": "jwynia",
+      "installs": 3144
+    },
+    {
+      "title": "ai-ui-patterns",
+      "developer": "patternsdev",
+      "installs": 3143
+    },
+    {
+      "title": "metabolic-cultures",
+      "developer": "jwynia",
+      "installs": 3142
+    },
+    {
+      "title": "vercel-development",
+      "developer": "mindrally",
+      "installs": 3141
+    },
+    {
+      "title": "hash-attack-techniques",
+      "developer": "yaklang",
+      "installs": 3140
+    },
+    {
+      "title": "macos-security-bypass",
+      "developer": "yaklang",
+      "installs": 3139
+    },
+    {
+      "title": "esbuild-bundler",
+      "developer": "mindrally",
+      "installs": 3138
+    },
+    {
+      "title": "excalidraw-diagram",
+      "developer": "axtonliu",
+      "installs": 3137
+    },
+    {
+      "title": "character-arc",
+      "developer": "jwynia",
+      "installs": 3136
+    },
+    {
+      "title": "anthropic-claude-development",
+      "developer": "mindrally",
+      "installs": 3135
+    },
+    {
+      "title": "devtools",
+      "developer": "vercel-labs",
+      "installs": 3134
+    },
+    {
+      "title": "nosql-injection",
+      "developer": "yaklang",
+      "installs": 3133
+    },
+    {
+      "title": "supermemory",
+      "developer": "supermemoryai",
+      "installs": 3132
+    },
+    {
+      "title": "streaming-ssr",
+      "developer": "patternsdev",
+      "installs": 3131
+    },
+    {
+      "title": "flash-fiction",
+      "developer": "jwynia",
+      "installs": 3130
+    },
+    {
+      "title": "core-bluetooth",
+      "developer": "dpearson2699",
+      "installs": 3129
+    },
+    {
+      "title": "solidity",
+      "developer": "mindrally",
+      "installs": 3128
+    },
+    {
+      "title": "api-development",
+      "developer": "mindrally",
+      "installs": 3127
+    },
+    {
+      "title": "claim-investigation",
+      "developer": "jwynia",
+      "installs": 3126
+    },
+    {
+      "title": "supabase",
+      "developer": "mindrally",
+      "installs": 3125
+    },
+    {
+      "title": "antd",
+      "developer": "ant-design",
+      "installs": 3124
+    },
+    {
+      "title": "swiftui-uikit-interop",
+      "developer": "dpearson2699",
+      "installs": 3123
+    },
+    {
+      "title": "swr",
+      "developer": "mindrally",
+      "installs": 3122
+    },
+    {
+      "title": "react-router-framework-mode",
+      "developer": "remix-run",
+      "installs": 3121
+    },
+    {
+      "title": "observe-whatsapp",
+      "developer": "gokapso",
+      "installs": 3120
+    },
+    {
+      "title": "analyze-logs",
+      "developer": "site",
+      "installs": 3119
+    },
+    {
+      "title": "postgresql-code-review",
+      "developer": "github",
+      "installs": 3118
+    },
+    {
+      "title": "brainstorming",
+      "developer": "jwynia",
+      "installs": 3117
+    },
+    {
+      "title": "swiftui-navigation",
+      "developer": "dpearson2699",
+      "installs": 3116
+    },
+    {
+      "title": "ios-application-dev",
+      "developer": "minimax-ai",
+      "installs": 3115
+    },
+    {
+      "title": "libfuzzer",
+      "developer": "trailofbits",
+      "installs": 2834
+    },
+    {
+      "title": "offer-letter-generator",
+      "developer": "claude-office-skills",
+      "installs": 2833
+    },
+    {
+      "title": "react-native",
+      "developer": "vercel-labs",
+      "installs": 2832
+    },
+    {
+      "title": "julia",
+      "developer": "mindrally",
+      "installs": 2831
+    },
+    {
+      "title": "data-analyst",
+      "developer": "mindrally",
+      "installs": 2830
+    },
+    {
+      "title": "rspec",
+      "developer": "mindrally",
+      "installs": 2829
+    },
+    {
+      "title": "agile-workflow",
+      "developer": "jwynia",
+      "installs": 2828
+    },
+    {
+      "title": "laravel-development",
+      "developer": "mindrally",
+      "installs": 2827
+    },
+    {
+      "title": "guidelines-advisor",
+      "developer": "trailofbits",
+      "installs": 2826
+    },
+    {
+      "title": "customer-success",
+      "developer": "claude-office-skills",
+      "installs": 2825
+    },
+    {
+      "title": "graphql-development",
+      "developer": "mindrally",
+      "installs": 2824
+    },
+    {
+      "title": "apple-reminders",
+      "developer": "steipete",
+      "installs": 2823
+    },
+    {
+      "title": "layout-analyzer",
+      "developer": "claude-office-skills",
+      "installs": 2822
+    },
+    {
+      "title": "elixir",
+      "developer": "mindrally",
+      "installs": 2821
+    },
+    {
+      "title": "race-condition",
+      "developer": "yaklang",
+      "installs": 2820
+    },
+    {
+      "title": "inspired-product",
+      "developer": "wondelai",
+      "installs": 2819
+    },
+    {
+      "title": "tailwindcss",
+      "developer": "mindrally",
+      "installs": 2818
+    },
+    {
+      "title": "intercom-automation",
+      "developer": "claude-office-skills",
+      "installs": 2817
+    },
+    {
+      "title": "swiftui-gestures",
+      "developer": "dpearson2699",
+      "installs": 2816
+    },
+    {
+      "title": "nextjs-react-redux-typescript-cursor-rules",
+      "developer": "mindrally",
+      "installs": 2815
+    },
+    {
+      "title": "building-pydantic-ai-agents",
+      "developer": "pydantic",
+      "installs": 2814
+    },
+    {
+      "title": "coreml",
+      "developer": "dpearson2699",
+      "installs": 2813
+    },
+    {
+      "title": "zeroize-audit",
+      "developer": "trailofbits",
+      "installs": 2812
+    },
+    {
+      "title": "rabbitmq-development",
+      "developer": "mindrally",
+      "installs": 2811
+    },
+    {
+      "title": "vercel-deploy",
+      "developer": "bytedance",
+      "installs": 2810
+    },
+    {
+      "title": "windows-av-evasion",
+      "developer": "yaklang",
+      "installs": 2809
+    },
+    {
+      "title": "interview-prep-generator",
+      "developer": "paramchoudhary",
+      "installs": 2808
+    },
+    {
+      "title": "business-logic-vuln",
+      "developer": "yaklang",
+      "installs": 2807
+    },
+    {
+      "title": "reference-compiler-cli",
+      "developer": "angular",
+      "installs": 2806
+    },
+    {
+      "title": "ai-slides",
+      "developer": "claude-office-skills",
+      "installs": 2805
+    },
+    {
+      "title": "security-monitoring",
+      "developer": "claude-office-skills",
+      "installs": 2804
+    },
+    {
+      "title": "ebook-analysis",
+      "developer": "jwynia",
+      "installs": 2803
+    },
+    {
+      "title": "pdf-compress",
+      "developer": "claude-office-skills",
+      "installs": 2802
+    },
+    {
+      "title": "story-sense",
+      "developer": "jwynia",
+      "installs": 2801
+    },
+    {
+      "title": "multiplayer-game",
+      "developer": "rivet-dev",
+      "installs": 2800
+    },
+    {
+      "title": "resume-formatter",
+      "developer": "paramchoudhary",
+      "installs": 2799
+    },
+    {
+      "title": "drizzle-orm",
+      "developer": "mindrally",
+      "installs": 2798
+    },
+    {
+      "title": "cairo-vulnerability-scanner",
+      "developer": "trailofbits",
+      "installs": 2797
+    },
+    {
+      "title": "podcast-automation",
+      "developer": "claude-office-skills",
+      "installs": 2796
+    },
+    {
+      "title": "zustand",
+      "developer": "lobehub",
+      "installs": 2795
+    },
+    {
+      "title": "scipy-best-practices",
+      "developer": "mindrally",
+      "installs": 2794
+    },
+    {
+      "title": "client-side-rendering",
+      "developer": "patternsdev",
+      "installs": 2793
+    },
+    {
+      "title": "screenshot-optimization",
+      "developer": "eronred",
+      "installs": 2792
+    },
+    {
+      "title": "agent-reach",
+      "developer": "panniantong",
+      "installs": 2791
+    },
+    {
+      "title": "semgrep-rule-variant-creator",
+      "developer": "trailofbits",
+      "installs": 2790
+    },
+    {
+      "title": "elite-longterm-memory",
+      "developer": "nextfrontierbuilds",
+      "installs": 2789
+    },
+    {
+      "title": "harness-writing",
+      "developer": "trailofbits",
+      "installs": 2788
+    },
+    {
+      "title": "spritekit",
+      "developer": "dpearson2699",
+      "installs": 2787
+    },
+    {
+      "title": "telegram-bot-builder",
+      "developer": "sickn33",
+      "installs": 2786
+    },
+    {
+      "title": "front-end-developer",
+      "developer": "mindrally",
+      "installs": 2785
+    },
+    {
+      "title": "dev-slides",
+      "developer": "claude-office-skills",
+      "installs": 2784
+    },
+    {
+      "title": "youtube-summarizer",
+      "developer": "sickn33",
+      "installs": 2783
+    },
+    {
+      "title": "django-rest-api-development",
+      "developer": "mindrally",
+      "installs": 2782
+    },
+    {
+      "title": "cors-cross-origin-misconfiguration",
+      "developer": "yaklang",
+      "installs": 2781
+    },
+    {
+      "title": "localization-l10n",
+      "developer": "mindrally",
+      "installs": 2780
+    },
+    {
+      "title": "constant-time-analysis",
+      "developer": "trailofbits",
+      "installs": 2779
+    },
+    {
+      "title": "webhook-automation",
+      "developer": "claude-office-skills",
+      "installs": 2778
+    },
+    {
+      "title": "bitbucket-workflow",
+      "developer": "mindrally",
+      "installs": 2777
+    },
+    {
+      "title": "chat-with-pdf",
+      "developer": "claude-office-skills",
+      "installs": 2776
+    },
+    {
+      "title": "graph-evolution",
+      "developer": "trailofbits",
+      "installs": 2775
+    },
+    {
+      "title": "testing-handbook-generator",
+      "developer": "trailofbits",
+      "installs": 2774
+    },
+    {
+      "title": "lead-qualification",
+      "developer": "claude-office-skills",
+      "installs": 2773
+    },
+    {
+      "title": "algorand-vulnerability-scanner",
+      "developer": "trailofbits",
+      "installs": 2772
+    },
+    {
+      "title": "react-hook-form",
+      "developer": "pproenca",
+      "installs": 2771
+    },
+    {
+      "title": "file-organizer",
+      "developer": "claude-office-skills",
+      "installs": 2770
+    },
+    {
+      "title": "vector-forge",
+      "developer": "trailofbits",
+      "installs": 2769
+    },
+    {
+      "title": "seo-best-practices",
+      "developer": "mindrally",
+      "installs": 2768
+    },
+    {
+      "title": "nano-banana-pro-openrouter",
+      "developer": "github",
+      "installs": 2767
+    },
+    {
+      "title": "template-engine",
+      "developer": "claude-office-skills",
+      "installs": 2766
+    },
+    {
+      "title": "ntlm-relay-coercion",
+      "developer": "yaklang",
+      "installs": 2765
+    },
+    {
+      "title": "ossfuzz",
+      "developer": "trailofbits",
+      "installs": 2764
+    },
+    {
+      "title": "react-native-dev",
+      "developer": "minimax-ai",
+      "installs": 2763
+    },
+    {
+      "title": "ai-ml-security",
+      "developer": "yaklang",
+      "installs": 2762
+    },
+    {
+      "title": "python",
+      "developer": "mindrally",
+      "installs": 2761
+    },
+    {
+      "title": "react-native-cursor-rules",
+      "developer": "mindrally",
+      "installs": 2760
+    },
+    {
+      "title": "changelog-generator",
+      "developer": "claude-office-skills",
+      "installs": 2759
+    },
+    {
+      "title": "windows-privilege-escalation",
+      "developer": "yaklang",
+      "installs": 2758
+    },
+    {
+      "title": "design-handoff",
+      "developer": "anthropics",
+      "installs": 2757
+    },
+    {
+      "title": "audit-augmentation",
+      "developer": "trailofbits",
+      "installs": 2756
+    },
+    {
+      "title": "scorecard-marketing",
+      "developer": "wondelai",
+      "installs": 2755
+    },
+    {
+      "title": "terraform",
+      "developer": "mindrally",
+      "installs": 2754
+    },
+    {
+      "title": "diagramming-code",
+      "developer": "trailofbits",
+      "installs": 2753
+    },
+    {
+      "title": "linux-privilege-escalation",
+      "developer": "yaklang",
+      "installs": 2752
+    },
+    {
+      "title": "workers-best-practices",
+      "developer": "site",
+      "installs": 2751
+    },
+    {
+      "title": "performance-review",
+      "developer": "anthropics",
+      "installs": 2750
+    },
+    {
+      "title": "spring-boot",
+      "developer": "mindrally",
+      "installs": 2749
+    },
+    {
+      "title": "kubernetes-pentesting",
+      "developer": "yaklang",
+      "installs": 2748
+    },
+    {
+      "title": "cheerio-parsing",
+      "developer": "mindrally",
+      "installs": 2746
+    },
+    {
+      "title": "interview-prep",
+      "developer": "anthropics",
+      "installs": 2745
+    },
+    {
+      "title": "brand-guidelines-generator",
+      "developer": "claude-office-skills",
+      "installs": 2744
+    },
+    {
+      "title": "wp-rest-api",
+      "developer": "wordpress",
+      "installs": 2743
+    },
+    {
+      "title": "grpc-development",
+      "developer": "mindrally",
+      "installs": 2742
+    },
+    {
+      "title": "research-workflow",
+      "developer": "jwynia",
+      "installs": 2741
+    },
+    {
+      "title": "java-quarkus-development",
+      "developer": "mindrally",
+      "installs": 2740
+    },
+    {
+      "title": "substrate-vulnerability-scanner",
+      "developer": "trailofbits",
+      "installs": 2739
+    },
+    {
+      "title": "joke-engineering",
+      "developer": "jwynia",
+      "installs": 2738
+    },
+    {
+      "title": "fuzzing-dictionary",
+      "developer": "trailofbits",
+      "installs": 2737
+    },
+    {
+      "title": "review-logging-patterns",
+      "developer": "site",
+      "installs": 2736
+    },
+    {
+      "title": "woocommerce-automation",
+      "developer": "claude-office-skills",
+      "installs": 2735
+    },
+    {
+      "title": "linux-lateral-movement",
+      "developer": "yaklang",
+      "installs": 2734
+    },
+    {
+      "title": "saas-metrics",
+      "developer": "claude-office-skills",
+      "installs": 2733
+    },
+    {
+      "title": "http-host-header-attacks",
+      "developer": "yaklang",
+      "installs": 2732
+    },
+    {
+      "title": "business-analyst",
+      "developer": "aj-geddes",
+      "installs": 2731
+    },
+    {
+      "title": "resume-tailor",
+      "developer": "paramchoudhary",
+      "installs": 2730
+    },
+    {
+      "title": "tunneling-and-pivoting",
+      "developer": "yaklang",
+      "installs": 2729
+    },
+    {
+      "title": "kotlin-development",
+      "developer": "mindrally",
+      "installs": 2728
+    },
+    {
+      "title": "fuzzing-obstacles",
+      "developer": "trailofbits",
+      "installs": 2727
+    },
+    {
+      "title": "spec-to-code-compliance",
+      "developer": "trailofbits",
+      "installs": 2726
+    },
+    {
+      "title": "dcf-valuation",
+      "developer": "claude-office-skills",
+      "installs": 2725
+    },
+    {
+      "title": "senior-data-scientist",
+      "developer": "davila7",
+      "installs": 2724
+    },
+    {
+      "title": "mutation-testing",
+      "developer": "trailofbits",
+      "installs": 2723
+    },
+    {
+      "title": "hooks-pattern",
+      "developer": "patternsdev",
+      "installs": 2722
+    },
+    {
+      "title": "trigger-agents",
+      "developer": "triggerdotdev",
+      "installs": 2721
+    },
+    {
+      "title": "mcp-hass",
+      "developer": "aahl",
+      "installs": 2720
+    },
+    {
+      "title": "swift-charts",
+      "developer": "dpearson2699",
+      "installs": 2719
+    },
+    {
+      "title": "skill-vetter",
+      "developer": "site",
+      "installs": 2718
+    },
+    {
+      "title": "vue-typescript",
+      "developer": "mindrally",
+      "installs": 2717
+    },
+    {
+      "title": "microsoft-foundry",
+      "developer": "microsoft",
+      "installs": 2600
+    },
+    {
+      "title": "github-actions-docs",
+      "developer": "xixu-me",
+      "installs": 2500
+    },
+    {
+      "title": "use-my-browser",
+      "developer": "xixu-me",
+      "installs": 2500
+    },
+    {
+      "title": "secure-linux-web-hosting",
+      "developer": "xixu-me",
+      "installs": 2500
+    },
+    {
+      "title": "extract-design-system",
+      "developer": "arvindrk",
+      "installs": 2500
+    },
+    {
+      "title": "skills-cli",
+      "developer": "xixu-me",
+      "installs": 2500
+    },
+    {
+      "title": "openclaw-secure-linux-cloud",
+      "developer": "xixu-me",
+      "installs": 2500
+    },
+    {
+      "title": "opensource-guide-coach",
+      "developer": "xixu-me",
+      "installs": 2500
+    },
+    {
+      "title": "minimal-run-and-audit",
+      "developer": "lllllllama",
+      "installs": 2500
+    },
+    {
+      "title": "paper-context-resolver",
+      "developer": "lllllllama",
+      "installs": 2500
+    },
+    {
+      "title": "readme-i18n",
+      "developer": "xixu-me",
+      "installs": 2500
+    },
+    {
+      "title": "repo-intake-and-plan",
+      "developer": "lllllllama",
+      "installs": 2500
+    },
+    {
+      "title": "running-claude-code-via-litellm-copilot",
+      "developer": "xixu-me",
+      "installs": 2500
+    },
+    {
+      "title": "env-and-assets-bootstrap",
+      "developer": "lllllllama",
+      "installs": 2500
+    },
+    {
+      "title": "xdrop",
+      "developer": "xixu-me",
+      "installs": 2500
+    },
+    {
+      "title": "docker-compose-orchestration",
+      "developer": "manutej",
+      "installs": 2434
+    },
+    {
+      "title": "investment-memo",
+      "developer": "claude-office-skills",
+      "installs": 2433
+    },
+    {
+      "title": "ads-apple",
+      "developer": "agricidaniel",
+      "installs": 2432
+    },
+    {
+      "title": "express-typescript",
+      "developer": "mindrally",
+      "installs": 2431
+    },
+    {
+      "title": "company-research",
+      "developer": "claude-office-skills",
+      "installs": 2430
+    },
+    {
+      "title": "mcporter",
+      "developer": "steipete",
+      "installs": 2429
+    },
+    {
+      "title": "ads-create",
+      "developer": "agricidaniel",
+      "installs": 2428
+    },
+    {
+      "title": "logging-best-practices",
+      "developer": "boristane",
+      "installs": 2427
+    },
+    {
+      "title": "chart-visualization",
+      "developer": "bytedance",
+      "installs": 2426
+    },
+    {
+      "title": "developer-growth-analysis",
+      "developer": "composiohq",
+      "installs": 2425
+    },
+    {
+      "title": "xcode-compilation-analyzer",
+      "developer": "avdlee",
+      "installs": 2424
+    },
+    {
+      "title": "ads-linkedin",
+      "developer": "agricidaniel",
+      "installs": 2423
+    },
+    {
+      "title": "paseo-orchestrate",
+      "developer": "getpaseo",
+      "installs": 2422
+    },
+    {
+      "title": "cpp-pro",
+      "developer": "jeffallan",
+      "installs": 2421
+    },
+    {
+      "title": "ads-microsoft",
+      "developer": "agricidaniel",
+      "installs": 2420
+    },
+    {
+      "title": "mmx-cli",
+      "developer": "minimax-ai",
+      "installs": 2419
+    },
+    {
+      "title": "invoice-organizer",
+      "developer": "composiohq",
+      "installs": 2418
+    },
+    {
+      "title": "clean-architecture",
+      "developer": "pproenca",
+      "installs": 2417
+    },
+    {
+      "title": "high-perf-browser",
+      "developer": "wondelai",
+      "installs": 2416
+    },
+    {
+      "title": "ai-agent-builder",
+      "developer": "claude-office-skills",
+      "installs": 2415
+    },
+    {
+      "title": "story-idea-generator",
+      "developer": "jwynia",
+      "installs": 2414
+    },
+    {
+      "title": "huggingface-gradio",
+      "developer": "huggingface",
+      "installs": 2413
+    },
+    {
+      "title": "pdf-generator",
+      "developer": "jwynia",
+      "installs": 2412
+    },
+    {
+      "title": "data-pipeline",
+      "developer": "claude-office-skills",
+      "installs": 2411
+    },
+    {
+      "title": "youtube-automation",
+      "developer": "claude-office-skills",
+      "installs": 2410
+    },
+    {
+      "title": "landing-page",
+      "developer": "jezweb",
+      "installs": 2409
+    },
+    {
+      "title": "shadcn",
+      "developer": "vercel-labs",
+      "installs": 2408
+    },
+    {
+      "title": "api-authorization-and-bola",
+      "developer": "yaklang",
+      "installs": 2407
+    },
+    {
+      "title": "typescript",
+      "developer": "mindrally",
+      "installs": 2406
+    },
+    {
+      "title": "apple-on-device-ai",
+      "developer": "dpearson2699",
+      "installs": 2405
+    },
+    {
+      "title": "blog-post",
+      "developer": "langchain-ai",
+      "installs": 2404
+    },
+    {
+      "title": "apple-appstore-reviewer",
+      "developer": "github",
+      "installs": 2403
+    },
+    {
+      "title": "mqtt-development",
+      "developer": "mindrally",
+      "installs": 2402
+    },
+    {
+      "title": "frontend-design",
+      "developer": "bytedance",
+      "installs": 2401
+    },
+    {
+      "title": "remotion-best-practices",
+      "developer": "remotion-dev",
+      "installs": 2400
+    },
+    {
+      "title": "sql-queries",
+      "developer": "anthropics",
+      "installs": 2400
+    },
+    {
+      "title": "android-pentesting-tricks",
+      "developer": "yaklang",
+      "installs": 2399
+    },
+    {
+      "title": "second-opinion",
+      "developer": "trailofbits",
+      "installs": 2398
+    },
+    {
+      "title": "ads-budget",
+      "developer": "agricidaniel",
+      "installs": 2397
+    },
+    {
+      "title": "ads-plan",
+      "developer": "agricidaniel",
+      "installs": 2396
+    },
+    {
+      "title": "drupal-development",
+      "developer": "mindrally",
+      "installs": 2395
+    },
+    {
+      "title": "api-auth-and-jwt-abuse",
+      "developer": "yaklang",
+      "installs": 2394
+    },
+    {
+      "title": "ads-test",
+      "developer": "agricidaniel",
+      "installs": 2393
+    },
+    {
+      "title": "image-generation",
+      "developer": "claude-office-skills",
+      "installs": 2392
+    },
+    {
+      "title": "proactive-self-improving-agent",
+      "developer": "yanhongxi-openclaw",
+      "installs": 2391
+    },
+    {
+      "title": "pdf-ocr-extraction",
+      "developer": "claude-office-skills",
+      "installs": 2390
+    },
+    {
+      "title": "go-backend-microservices",
+      "developer": "mindrally",
+      "installs": 2389
+    },
+    {
+      "title": "lean-ux",
+      "developer": "wondelai",
+      "installs": 2388
+    },
+    {
+      "title": "swift-testing-expert",
+      "developer": "avdlee",
+      "installs": 2387
+    },
+    {
+      "title": "applicant-screening",
+      "developer": "claude-office-skills",
+      "installs": 2386
+    },
+    {
+      "title": "openai-whisper-api",
+      "developer": "steipete",
+      "installs": 2385
+    },
+    {
+      "title": "ios-security",
+      "developer": "dpearson2699",
+      "installs": 2384
+    },
+    {
+      "title": "docker",
+      "developer": "mindrally",
+      "installs": 2383
+    },
+    {
+      "title": "etl-pipeline",
+      "developer": "claude-office-skills",
+      "installs": 2382
+    },
+    {
+      "title": "ads-creative",
+      "developer": "agricidaniel",
+      "installs": 2381
+    },
+    {
+      "title": "fact-check",
+      "developer": "jwynia",
+      "installs": 2380
+    },
+    {
+      "title": "redux-toolkit",
+      "developer": "mindrally",
+      "installs": 2379
+    },
+    {
+      "title": "nestjs-clean-typescript",
+      "developer": "mindrally",
+      "installs": 2378
+    },
+    {
+      "title": "ads-dna",
+      "developer": "agricidaniel",
+      "installs": 2377
+    },
+    {
+      "title": "xcode-build-benchmark",
+      "developer": "avdlee",
+      "installs": 2376
+    },
+    {
+      "title": "swift-testing",
+      "developer": "dpearson2699",
+      "installs": 2375
+    },
+    {
+      "title": "data-extractor",
+      "developer": "claude-office-skills",
+      "installs": 2374
+    },
+    {
+      "title": "wp-plugin-development",
+      "developer": "wordpress",
+      "installs": 2373
+    },
+    {
+      "title": "ai-product-photography",
+      "developer": "skillssh",
+      "installs": 2372
+    },
+    {
+      "title": "review",
+      "developer": "alirezarezvani",
+      "installs": 2371
+    },
+    {
+      "title": "read-arxiv-paper",
+      "developer": "karpathy",
+      "installs": 2370
+    },
+    {
+      "title": "agent-ui",
+      "developer": "skillssh",
+      "installs": 2369
+    },
+    {
+      "title": "design-motion-principles",
+      "developer": "kylezantos",
+      "installs": 2368
+    },
+    {
+      "title": "shadcn-svelte",
+      "developer": "vercel-labs",
+      "installs": 2367
+    },
+    {
+      "title": "llm-models",
+      "developer": "skillssh",
+      "installs": 2366
+    },
+    {
+      "title": "ai-music-generation",
+      "developer": "skillssh",
+      "installs": 2365
+    },
+    {
+      "title": "active-directory-acl-abuse",
+      "developer": "yaklang",
+      "installs": 2364
+    },
+    {
+      "title": "tauri-development",
+      "developer": "mindrally",
+      "installs": 2363
+    },
+    {
+      "title": "401-403-bypass-techniques",
+      "developer": "yaklang",
+      "installs": 2362
+    },
+    {
+      "title": "javascript-sdk",
+      "developer": "skillssh",
+      "installs": 2361
+    },
+    {
+      "title": "board-prep",
+      "developer": "alirezarezvani",
+      "installs": 2360
+    },
+    {
+      "title": "browser-automation",
+      "developer": "claude-office-skills",
+      "installs": 2359
+    },
+    {
+      "title": "chat-ui",
+      "developer": "skillssh",
+      "installs": 2358
+    },
+    {
+      "title": "playwright-dev",
+      "developer": "microsoft",
+      "installs": 2357
+    },
+    {
+      "title": "expo-react-native-typescript",
+      "developer": "mindrally",
+      "installs": 2356
+    },
+    {
+      "title": "talking-head-production",
+      "developer": "skillssh",
+      "installs": 2355
+    },
+    {
+      "title": "sanity-best-practices",
+      "developer": "sanity-io",
+      "installs": 2354
+    },
+    {
+      "title": "ai-podcast-creation",
+      "developer": "skillssh",
+      "installs": 2350
+    },
+    {
+      "title": "nextjs-supabase-auth",
+      "developer": "sickn33",
+      "installs": 2349
+    },
+    {
+      "title": "merge",
+      "developer": "alirezarezvani",
+      "installs": 2348
+    },
+    {
+      "title": "postmortem",
+      "developer": "alirezarezvani",
+      "installs": 2347
+    },
+    {
+      "title": "ai-automation-workflows",
+      "developer": "skillssh",
+      "installs": 2346
+    },
+    {
+      "title": "ai-social-media-content",
+      "developer": "skillssh",
+      "installs": 2345
+    },
+    {
+      "title": "newsletter-curation",
+      "developer": "skillssh",
+      "installs": 2344
+    },
+    {
+      "title": "hard-call",
+      "developer": "alirezarezvani",
+      "installs": 2343
+    },
+    {
+      "title": "elite-powerpoint-designer",
+      "developer": "willem4130",
+      "installs": 2342
+    },
+    {
+      "title": "board",
+      "developer": "alirezarezvani",
+      "installs": 2341
+    },
+    {
+      "title": "elevenlabs-voice-isolator",
+      "developer": "skillssh",
+      "installs": 2340
+    },
+    {
+      "title": "machine-learning",
+      "developer": "mindrally",
+      "installs": 2339
+    },
+    {
+      "title": "spawn",
+      "developer": "alirezarezvani",
+      "installs": 2338
+    },
+    {
+      "title": "promote",
+      "developer": "alirezarezvani",
+      "installs": 2337
+    },
+    {
+      "title": "init",
+      "developer": "alirezarezvani",
+      "installs": 2335
+    },
+    {
+      "title": "lean-startup",
+      "developer": "wondelai",
+      "installs": 2334
+    },
+    {
+      "title": "linkedin-content",
+      "developer": "skillssh",
+      "installs": 2333
+    },
+    {
+      "title": "building-inferencesh-apps",
+      "developer": "skillssh",
+      "installs": 2332
+    },
+    {
+      "title": "ai-marketing-videos",
+      "developer": "skillssh",
+      "installs": 2331
+    },
+    {
+      "title": "proposal-writer",
+      "developer": "claude-office-skills",
+      "installs": 2330
+    },
+    {
+      "title": "status",
+      "developer": "alirezarezvani",
+      "installs": 2329
+    },
+    {
+      "title": "tools-ui",
+      "developer": "skillssh",
+      "installs": 2328
+    },
+    {
+      "title": "negotiation",
+      "developer": "wondelai",
+      "installs": 2327
+    },
+    {
+      "title": "upstash-redis-kv",
+      "developer": "intellectronica",
+      "installs": 2326
+    },
+    {
+      "title": "java-docs",
+      "developer": "github",
+      "installs": 2325
+    },
+    {
+      "title": "cookie-sync",
+      "developer": "browserbase",
+      "installs": 2324
+    },
+    {
+      "title": "elevenlabs-tts",
+      "developer": "skillssh",
+      "installs": 2323
+    },
+    {
+      "title": "ads-landing",
+      "developer": "agricidaniel",
+      "installs": 2322
+    },
+    {
+      "title": "cv-builder",
+      "developer": "claude-office-skills",
+      "installs": 2321
+    },
+    {
+      "title": "improve-retention",
+      "developer": "wondelai",
+      "installs": 2320
+    },
+    {
+      "title": "ml-pipeline",
+      "developer": "jeffallan",
+      "installs": 2319
+    },
+    {
+      "title": "ai-rag-pipeline",
+      "developer": "skillssh",
+      "installs": 2318
+    },
+    {
+      "title": "ai-avatar-video",
+      "developer": "skillssh",
+      "installs": 2317
+    },
+    {
+      "title": "challenge",
+      "developer": "alirezarezvani",
+      "installs": 2316
+    },
+    {
+      "title": "academic-researcher",
+      "developer": "shubhamsaboo",
+      "installs": 2315
+    },
+    {
+      "title": "vercel-react-best-practices",
+      "developer": "vercel-labs",
+      "installs": 2300
+    },
+    {
+      "title": "caveman",
+      "developer": "juliusbrussee",
+      "installs": 2300
+    },
+    {
+      "title": "supabase-postgres-best-practices",
+      "developer": "supabase",
+      "installs": 2100
+    },
+    {
+      "title": "building-a-promotion-case",
+      "developer": "refoundai",
+      "installs": 2034
+    },
+    {
+      "title": "pptx-manipulation",
+      "developer": "claude-office-skills",
+      "installs": 2033
+    },
+    {
+      "title": "penpot-uiux-design",
+      "developer": "github",
+      "installs": 2032
+    },
+    {
+      "title": "hv-analysis",
+      "developer": "kkkkhazix",
+      "installs": 2031
+    },
+    {
+      "title": "planning-under-uncertainty",
+      "developer": "refoundai",
+      "installs": 2030
+    },
+    {
+      "title": "rag-architect",
+      "developer": "jeffallan",
+      "installs": 2029
+    },
+    {
+      "title": "agent-orchestration-multi-agent-optimize",
+      "developer": "sickn33",
+      "installs": 2028
+    },
+    {
+      "title": "remote-browser",
+      "developer": "browser-use",
+      "installs": 2027
+    },
+    {
+      "title": "blog-writing-guide",
+      "developer": "getsentry",
+      "installs": 2026
+    },
+    {
+      "title": "vue-jsx-best-practices",
+      "developer": "vuejs-ai",
+      "installs": 2025
+    },
+    {
+      "title": "react-refactor",
+      "developer": "pproenca",
+      "installs": 2024
+    },
+    {
+      "title": "gitea-workflow",
+      "developer": "jwynia",
+      "installs": 2023
+    },
+    {
+      "title": "technical-roadmaps",
+      "developer": "refoundai",
+      "installs": 2022
+    },
+    {
+      "title": "telegram-bot",
+      "developer": "claude-office-skills",
+      "installs": 2021
+    },
+    {
+      "title": "ghost-repo-context",
+      "developer": "ghostsecurity",
+      "installs": 2020
+    },
+    {
+      "title": "computer-vision-opencv",
+      "developer": "mindrally",
+      "installs": 2019
+    },
+    {
+      "title": "vue-options-api-best-practices",
+      "developer": "vuejs-ai",
+      "installs": 2018
+    },
+    {
+      "title": "easy-project",
+      "developer": "membranedev",
+      "installs": 2017
+    },
+    {
+      "title": "core",
+      "developer": "vercel-labs",
+      "installs": 2016
+    },
+    {
+      "title": "vision-analysis",
+      "developer": "minimax-ai",
+      "installs": 2015
+    },
+    {
+      "title": "cro-methodology",
+      "developer": "wondelai",
+      "installs": 2014
+    },
+    {
+      "title": "vue-router-best-practices",
+      "developer": "vuejs-ai",
+      "installs": 2013
+    },
+    {
+      "title": "sales-qualification",
+      "developer": "refoundai",
+      "installs": 2012
+    },
+    {
+      "title": "fullstack-dev",
+      "developer": "minimax-ai",
+      "installs": 2011
+    },
+    {
+      "title": "browserbase-cli",
+      "developer": "browserbase",
+      "installs": 2010
+    },
+    {
+      "title": "analyzing-user-feedback",
+      "developer": "refoundai",
+      "installs": 2009
+    },
+    {
+      "title": "production-smoke-suite",
+      "developer": "pramoddutta",
+      "installs": 2008
+    },
+    {
+      "title": "douyin",
+      "developer": "xiaoyiv",
+      "installs": 2007
+    },
+    {
+      "title": "positioning-messaging",
+      "developer": "refoundai",
+      "installs": 2006
+    },
+    {
+      "title": "usability-testing",
+      "developer": "refoundai",
+      "installs": 2005
+    },
+    {
+      "title": "ghost-report",
+      "developer": "ghostsecurity",
+      "installs": 2004
+    },
+    {
+      "title": "knowledge-agent",
+      "developer": "thedotmack",
+      "installs": 2003
+    },
+    {
+      "title": "markdown-converter",
+      "developer": "intellectronica",
+      "installs": 2002
+    },
+    {
+      "title": "plugin-store",
+      "developer": "okx",
+      "installs": 2001
+    },
+    {
+      "title": "agent-browser",
+      "developer": "vercel-labs",
+      "installs": 2000
+    },
+    {
+      "title": "vue-expert",
+      "developer": "jeffallan",
+      "installs": 2000
+    },
+    {
+      "title": "playwright-api-testing",
+      "developer": "pramoddutta",
+      "installs": 1999
+    },
+    {
+      "title": "running-decision-processes",
+      "developer": "refoundai",
+      "installs": 1998
+    },
+    {
+      "title": "working-backwards",
+      "developer": "refoundai",
+      "installs": 1997
+    },
+    {
+      "title": "todoist-api",
+      "developer": "intellectronica",
+      "installs": 1996
+    },
+    {
+      "title": "color-expert",
+      "developer": "meodai",
+      "installs": 1995
+    },
+    {
+      "title": "youtube-transcript",
+      "developer": "intellectronica",
+      "installs": 1994
+    },
+    {
+      "title": "written-communication",
+      "developer": "refoundai",
+      "installs": 1993
+    },
+    {
+      "title": "shopify-expert",
+      "developer": "jeffallan",
+      "installs": 1992
+    },
+    {
+      "title": "clean-code",
+      "developer": "pproenca",
+      "installs": 1991
+    },
+    {
+      "title": "writing-prds",
+      "developer": "refoundai",
+      "installs": 1990
+    },
+    {
+      "title": "gog",
+      "developer": "steipete",
+      "installs": 1989
+    },
+    {
+      "title": "nextjs-typescript-tailwindcss-supabase",
+      "developer": "mindrally",
+      "installs": 1988
+    },
+    {
+      "title": "office-to-md",
+      "developer": "claude-office-skills",
+      "installs": 1987
+    },
+    {
+      "title": "md2wechat",
+      "developer": "geekjourneyx",
+      "installs": 1986
+    },
+    {
+      "title": "feature-forge",
+      "developer": "jeffallan",
+      "installs": 1985
+    },
+    {
+      "title": "lottie",
+      "developer": "mindrally",
+      "installs": 1984
+    },
+    {
+      "title": "defining-product-vision",
+      "developer": "refoundai",
+      "installs": 1983
+    },
+    {
+      "title": "context7-mcp",
+      "developer": "upstash",
+      "installs": 1982
+    },
+    {
+      "title": "marimo-notebook",
+      "developer": "marimo-team",
+      "installs": 1981
+    },
+    {
+      "title": "prioritizing-roadmap",
+      "developer": "refoundai",
+      "installs": 1980
+    },
+    {
+      "title": "tavily",
+      "developer": "intellectronica",
+      "installs": 1979
+    },
+    {
+      "title": "ai-product-strategy",
+      "developer": "refoundai",
+      "installs": 1978
+    },
+    {
+      "title": "miniprogram-development",
+      "developer": "tencentcloudbase",
+      "installs": 1977
+    },
+    {
+      "title": "web-design-reviewer",
+      "developer": "github",
+      "installs": 1976
+    },
+    {
+      "title": "rails-expert",
+      "developer": "jeffallan",
+      "installs": 1975
+    },
+    {
+      "title": "retention-engagement",
+      "developer": "refoundai",
+      "installs": 1974
+    },
+    {
+      "title": "tutor",
+      "developer": "roundtable02",
+      "installs": 1973
+    },
+    {
+      "title": "founder-sales",
+      "developer": "refoundai",
+      "installs": 1972
+    },
+    {
+      "title": "dart-best-practices",
+      "developer": "kevmoo",
+      "installs": 1971
+    },
+    {
+      "title": "minimax-pdf",
+      "developer": "minimax-ai",
+      "installs": 1970
+    },
+    {
+      "title": "redis-best-practices",
+      "developer": "mindrally",
+      "installs": 1969
+    },
+    {
+      "title": "ocr-document-processor",
+      "developer": "dkyazzentwatwa",
+      "installs": 1968
+    },
+    {
+      "title": "integrate-whatsapp",
+      "developer": "gokapso",
+      "installs": 1967
+    },
+    {
+      "title": "playwright-expert",
+      "developer": "jeffallan",
+      "installs": 1966
+    },
+    {
+      "title": "courier",
+      "developer": "membranedev",
+      "installs": 1965
+    },
+    {
+      "title": "sap-hana",
+      "developer": "membranedev",
+      "installs": 1964
+    },
+    {
+      "title": "deepline-quickstart",
+      "developer": "site",
+      "installs": 1963
+    },
+    {
+      "title": "weekly-report",
+      "developer": "claude-office-skills",
+      "installs": 1962
+    },
+    {
+      "title": "n8n-validation-expert",
+      "developer": "czlonkowski",
+      "installs": 1961
+    },
+    {
+      "title": "ghost-scan-secrets",
+      "developer": "ghostsecurity",
+      "installs": 1960
+    },
+    {
+      "title": "seo-aeo-best-practices",
+      "developer": "sanity-io",
+      "installs": 1959
+    },
+    {
+      "title": "sre-engineer",
+      "developer": "jeffallan",
+      "installs": 1958
+    },
+    {
+      "title": "clean-code",
+      "developer": "wondelai",
+      "installs": 1957
+    },
+    {
+      "title": "competitive-analysis",
+      "developer": "refoundai",
+      "installs": 1956
+    },
+    {
+      "title": "videoagent-video-studio",
+      "developer": "pexoai",
+      "installs": 1955
+    },
+    {
+      "title": "accessibility-a11y",
+      "developer": "mindrally",
+      "installs": 1954
+    },
+    {
+      "title": "differential-review",
+      "developer": "trailofbits",
+      "installs": 1953
+    },
+    {
+      "title": "iot",
+      "developer": "markdown-viewer",
+      "installs": 1952
+    },
+    {
+      "title": "find-docs",
+      "developer": "upstash",
+      "installs": 1951
+    },
+    {
+      "title": "post-mortems-retrospectives",
+      "developer": "refoundai",
+      "installs": 1950
+    },
+    {
+      "title": "systems-thinking",
+      "developer": "refoundai",
+      "installs": 1949
+    },
+    {
+      "title": "upgrade-stripe",
+      "developer": "stripe",
+      "installs": 1948
+    },
+    {
+      "title": "presentation-design",
+      "developer": "jwynia",
+      "installs": 1947
+    },
+    {
+      "title": "payload",
+      "developer": "payloadcms",
+      "installs": 1946
+    },
+    {
+      "title": "latex-thesis-zh",
+      "developer": "bahayonghang",
+      "installs": 1945
+    },
+    {
+      "title": "frontend-skill",
+      "developer": "openai",
+      "installs": 1944
+    },
+    {
+      "title": "ghost-scan-deps",
+      "developer": "ghostsecurity",
+      "installs": 1943
+    },
+    {
+      "title": "evaluating-trade-offs",
+      "developer": "refoundai",
+      "installs": 1942
+    },
+    {
+      "title": "content-marketing",
+      "developer": "refoundai",
+      "installs": 1941
+    },
+    {
+      "title": "ghost-validate",
+      "developer": "ghostsecurity",
+      "installs": 1940
+    },
+    {
+      "title": "ghost-proxy",
+      "developer": "ghostsecurity",
+      "installs": 1939
+    },
+    {
+      "title": "react-three-fiber",
+      "developer": "vercel-labs",
+      "installs": 1938
+    },
+    {
+      "title": "java-architect",
+      "developer": "jeffallan",
+      "installs": 1937
+    },
+    {
+      "title": "workflow-hello-world",
+      "developer": "site",
+      "installs": 1936
+    },
+    {
+      "title": "multi-search-engine",
+      "developer": "aaaaqwq",
+      "installs": 1935
+    },
+    {
+      "title": "design-sprint",
+      "developer": "wondelai",
+      "installs": 1934
+    },
+    {
+      "title": "linkedin-profile-optimizer",
+      "developer": "paramchoudhary",
+      "installs": 1933
+    },
+    {
+      "title": "bluecart-api",
+      "developer": "membranedev",
+      "installs": 1932
+    },
+    {
+      "title": "tanstack-router",
+      "developer": "tanstack-skills",
+      "installs": 1931
+    },
+    {
+      "title": "frontend-dev",
+      "developer": "minimax-ai",
+      "installs": 1930
+    },
+    {
+      "title": "office-mcp",
+      "developer": "claude-office-skills",
+      "installs": 1929
+    },
+    {
+      "title": "typeorm",
+      "developer": "mindrally",
+      "installs": 1928
+    },
+    {
+      "title": "beautiful-mermaid",
+      "developer": "intellectronica",
+      "installs": 1927
+    },
+    {
+      "title": "ads",
+      "developer": "agricidaniel",
+      "installs": 1926
+    },
+    {
+      "title": "niche-signal-discovery",
+      "developer": "site",
+      "installs": 1925
+    },
+    {
+      "title": "code-simplifier",
+      "developer": "pproenca",
+      "installs": 1924
+    },
+    {
+      "title": "portfolio-prospecting",
+      "developer": "site",
+      "installs": 1923
+    },
+    {
+      "title": "tech-debt-analyzer",
+      "developer": "ailabs-393",
+      "installs": 1922
+    },
+    {
+      "title": "giving-presentations",
+      "developer": "refoundai",
+      "installs": 1921
+    },
+    {
+      "title": "caveman",
+      "developer": "shawnchee",
+      "installs": 1920
+    },
+    {
+      "title": "gtm-meta-skill",
+      "developer": "site",
+      "installs": 1919
+    },
+    {
+      "title": "skills-vote",
+      "developer": "memtensor",
+      "installs": 1918
+    },
+    {
+      "title": "edge-tts",
+      "developer": "aahl",
+      "installs": 1917
+    },
+    {
+      "title": "simple",
+      "developer": "roin-orca",
+      "installs": 1900
+    },
+    {
+      "title": "web-design-guidelines",
+      "developer": "vercel-labs",
+      "installs": 1900
+    },
+    {
+      "title": "polish",
+      "developer": "pbakaus",
+      "installs": 1800
+    },
+    {
+      "title": "shadcn",
+      "developer": "shadcn",
+      "installs": 1800
+    },
+    {
+      "title": "web-search",
+      "developer": "skillssh",
+      "installs": 1800
+    },
+    {
+      "title": "impeccable",
+      "developer": "pbakaus",
+      "installs": 1700
+    },
+    {
+      "title": "critique",
+      "developer": "pbakaus",
+      "installs": 1700
+    },
+    {
+      "title": "audit",
+      "developer": "pbakaus",
+      "installs": 1700
+    },
+    {
+      "title": "supabase",
+      "developer": "supabase",
+      "installs": 1700
+    },
+    {
+      "title": "animate",
+      "developer": "pbakaus",
+      "installs": 1700
+    },
+    {
+      "title": "monitoring-expert",
+      "developer": "jeffallan",
+      "installs": 1634
+    },
+    {
+      "title": "openclaw-history-ingest",
+      "developer": "ar9av",
+      "installs": 1633
+    },
+    {
+      "title": "stock-analysis",
+      "developer": "claude-office-skills",
+      "installs": 1632
+    },
+    {
+      "title": "tend",
+      "developer": "juxt",
+      "installs": 1631
+    },
+    {
+      "title": "elicit",
+      "developer": "juxt",
+      "installs": 1630
+    },
+    {
+      "title": "infocard",
+      "developer": "markdown-viewer",
+      "installs": 1629
+    },
+    {
+      "title": "propagate",
+      "developer": "juxt",
+      "installs": 1628
+    },
+    {
+      "title": "python-pro",
+      "developer": "jeffallan",
+      "installs": 1627
+    },
+    {
+      "title": "smart-explore",
+      "developer": "thedotmack",
+      "installs": 1626
+    },
+    {
+      "title": "weed",
+      "developer": "juxt",
+      "installs": 1625
+    },
+    {
+      "title": "database-optimizer",
+      "developer": "jeffallan",
+      "installs": 1624
+    },
+    {
+      "title": "using-agent-skills",
+      "developer": "addyosmani",
+      "installs": 1623
+    },
+    {
+      "title": "finance-expert",
+      "developer": "personamanagmentlayer",
+      "installs": 1622
+    },
+    {
+      "title": "ljg-learn",
+      "developer": "lijigang",
+      "installs": 1621
+    },
+    {
+      "title": "web-scraping",
+      "developer": "mindrally",
+      "installs": 1620
+    },
+    {
+      "title": "bpmn",
+      "developer": "markdown-viewer",
+      "installs": 1619
+    },
+    {
+      "title": "ffmpeg",
+      "developer": "digitalsamba",
+      "installs": 1618
+    },
+    {
+      "title": "distill",
+      "developer": "juxt",
+      "installs": 1617
+    },
+    {
+      "title": "mindmap",
+      "developer": "markdown-viewer",
+      "installs": 1616
+    },
+    {
+      "title": "ljg-plain",
+      "developer": "lijigang",
+      "installs": 1615
+    },
+    {
+      "title": "backtesting-trading-strategies",
+      "developer": "jeremylongshore",
+      "installs": 1614
+    },
+    {
+      "title": "heygen-skills",
+      "developer": "heygen-com",
+      "installs": 1613
+    },
+    {
+      "title": "playwright-skill",
+      "developer": "testdino-hq",
+      "installs": 1612
+    },
+    {
+      "title": "ppt-generation",
+      "developer": "bytedance",
+      "installs": 1611
+    },
+    {
+      "title": "secure-code-guardian",
+      "developer": "jeffallan",
+      "installs": 1610
+    },
+    {
+      "title": "websocket-engineer",
+      "developer": "jeffallan",
+      "installs": 1609
+    },
+    {
+      "title": "setup-api-key",
+      "developer": "elevenlabs",
+      "installs": 1608
+    },
+    {
+      "title": "script-writer",
+      "developer": "ailabs-393",
+      "installs": 1607
+    },
+    {
+      "title": "data-analysis",
+      "developer": "bytedance",
+      "installs": 1606
+    },
+    {
+      "title": "debugging-and-error-recovery",
+      "developer": "addyosmani",
+      "installs": 1605
+    },
+    {
+      "title": "hermes-agent",
+      "developer": "wihy",
+      "installs": 1604
+    },
+    {
+      "title": "browser-testing-with-devtools",
+      "developer": "addyosmani",
+      "installs": 1603
+    },
+    {
+      "title": "gemini-live-api-dev",
+      "developer": "google-gemini",
+      "installs": 1602
+    },
+    {
+      "title": "karpathy-guidelines",
+      "developer": "multica-ai",
+      "installs": 1601
+    },
+    {
+      "title": "hyperframes",
+      "developer": "heygen-com",
+      "installs": 1600
+    },
+    {
+      "title": "uniwind",
+      "developer": "uni-stack",
+      "installs": 1600
+    },
+    {
+      "title": "ljg-relationship",
+      "developer": "lijigang",
+      "installs": 1599
+    },
+    {
+      "title": "web-typography",
+      "developer": "wondelai",
+      "installs": 1598
+    },
+    {
+      "title": "brand-analyzer",
+      "developer": "ailabs-393",
+      "installs": 1597
+    },
+    {
+      "title": "make-plan",
+      "developer": "thedotmack",
+      "installs": 1596
+    },
+    {
+      "title": "git-workflow-and-versioning",
+      "developer": "addyosmani",
+      "installs": 1595
+    },
+    {
+      "title": "brand-storytelling",
+      "developer": "refoundai",
+      "installs": 1594
+    },
+    {
+      "title": "content-refresher",
+      "developer": "aaron-he-zhu",
+      "installs": 1593
+    },
+    {
+      "title": "hindsight-docs",
+      "developer": "vectorize-io",
+      "installs": 1592
+    },
+    {
+      "title": "uml",
+      "developer": "markdown-viewer",
+      "installs": 1591
+    },
+    {
+      "title": "api-and-interface-design",
+      "developer": "addyosmani",
+      "installs": 1590
+    },
+    {
+      "title": "security-best-practices",
+      "developer": "openai",
+      "installs": 1589
+    },
+    {
+      "title": "tushare",
+      "developer": "waditu-tushare",
+      "installs": 1588
+    },
+    {
+      "title": "ios-hig-design",
+      "developer": "wondelai",
+      "installs": 1587
+    },
+    {
+      "title": "code-documenter",
+      "developer": "jeffallan",
+      "installs": 1586
+    },
+    {
+      "title": "content-creation",
+      "developer": "anthropics",
+      "installs": 1585
+    },
+    {
+      "title": "debugging-wizard",
+      "developer": "jeffallan",
+      "installs": 1584
+    },
+    {
+      "title": "heroui-migration",
+      "developer": "heroui-inc",
+      "installs": 1583
+    },
+    {
+      "title": "content-gap-analysis",
+      "developer": "aaron-he-zhu",
+      "installs": 1582
+    },
+    {
+      "title": "logo-generator",
+      "developer": "op7418",
+      "installs": 1581
+    },
+    {
+      "title": "infographic",
+      "developer": "markdown-viewer",
+      "installs": 1580
+    },
+    {
+      "title": "sound-effects",
+      "developer": "elevenlabs",
+      "installs": 1579
+    },
+    {
+      "title": "second-brain-lint",
+      "developer": "nicholasspisak",
+      "installs": 1578
+    },
+    {
+      "title": "ljg-travel",
+      "developer": "lijigang",
+      "installs": 1577
+    },
+    {
+      "title": "rust-engineer",
+      "developer": "jeffallan",
+      "installs": 1576
+    },
+    {
+      "title": "idea-refine",
+      "developer": "addyosmani",
+      "installs": 1575
+    },
+    {
+      "title": "schema-markup-generator",
+      "developer": "aaron-he-zhu",
+      "installs": 1574
+    },
+    {
+      "title": "performance-reporter",
+      "developer": "aaron-he-zhu",
+      "installs": 1573
+    },
+    {
+      "title": "web-research",
+      "developer": "langchain-ai",
+      "installs": 1572
+    },
+    {
+      "title": "terraform-style-guide",
+      "developer": "hashicorp",
+      "installs": 1571
+    },
+    {
+      "title": "rank-tracker",
+      "developer": "aaron-he-zhu",
+      "installs": 1570
+    },
+    {
+      "title": "alert-manager",
+      "developer": "aaron-he-zhu",
+      "installs": 1569
+    },
+    {
+      "title": "agents",
+      "developer": "elevenlabs",
+      "installs": 1568
+    },
+    {
+      "title": "vibe-coding",
+      "developer": "refoundai",
+      "installs": 1567
+    },
+    {
+      "title": "personal-assistant",
+      "developer": "ailabs-393",
+      "installs": 1566
+    },
+    {
+      "title": "fullstack-developer",
+      "developer": "shubhamsaboo",
+      "installs": 1565
+    },
+    {
+      "title": "archimate",
+      "developer": "markdown-viewer",
+      "installs": 1564
+    },
+    {
+      "title": "godot-best-practices",
+      "developer": "jwynia",
+      "installs": 1563
+    },
+    {
+      "title": "fullstack-guardian",
+      "developer": "jeffallan",
+      "installs": 1562
+    },
+    {
+      "title": "seo-dataforseo",
+      "developer": "agricidaniel",
+      "installs": 1561
+    },
+    {
+      "title": "tauri-v2",
+      "developer": "nodnarbnitram",
+      "installs": 1560
+    },
+    {
+      "title": "workflow-init",
+      "developer": "vercel",
+      "installs": 1559
+    },
+    {
+      "title": "seo-maps",
+      "developer": "agricidaniel",
+      "installs": 1558
+    },
+    {
+      "title": "mysql",
+      "developer": "planetscale",
+      "installs": 1557
+    },
+    {
+      "title": "tanstack-form",
+      "developer": "tanstack-skills",
+      "installs": 1556
+    },
+    {
+      "title": "seo-audit",
+      "developer": "agricidaniel",
+      "installs": 1555
+    },
+    {
+      "title": "ai-sdk",
+      "developer": "vercel-labs",
+      "installs": 1554
+    },
+    {
+      "title": "do",
+      "developer": "thedotmack",
+      "installs": 1553
+    },
+    {
+      "title": "seo-cluster",
+      "developer": "agricidaniel",
+      "installs": 1552
+    },
+    {
+      "title": "data-analysis",
+      "developer": "claude-office-skills",
+      "installs": 1551
+    },
+    {
+      "title": "dotnet-best-practices",
+      "developer": "github",
+      "installs": 1550
+    },
+    {
+      "title": "seo-local",
+      "developer": "agricidaniel",
+      "installs": 1549
+    },
+    {
+      "title": "entity-optimizer",
+      "developer": "aaron-he-zhu",
+      "installs": 1548
+    },
+    {
+      "title": "agentation-self-driving",
+      "developer": "benjitaylor",
+      "installs": 1547
+    },
+    {
+      "title": "memory-management",
+      "developer": "aaron-he-zhu",
+      "installs": 1546
+    },
+    {
+      "title": "seo-drift",
+      "developer": "agricidaniel",
+      "installs": 1545
+    },
+    {
+      "title": "domain-authority-auditor",
+      "developer": "aaron-he-zhu",
+      "installs": 1544
+    },
+    {
+      "title": "prompt-engineer",
+      "developer": "jeffallan",
+      "installs": 1543
+    },
+    {
+      "title": "seo-ecommerce",
+      "developer": "agricidaniel",
+      "installs": 1542
+    },
+    {
+      "title": "seo-hreflang",
+      "developer": "agricidaniel",
+      "installs": 1541
+    },
+    {
+      "title": "context-engineering",
+      "developer": "addyosmani",
+      "installs": 1540
+    },
+    {
+      "title": "incremental-implementation",
+      "developer": "addyosmani",
+      "installs": 1539
+    },
+    {
+      "title": "ui-animation",
+      "developer": "mblode",
+      "installs": 1538
+    },
+    {
+      "title": "adk-cheatsheet",
+      "developer": "google",
+      "installs": 1537
+    },
+    {
+      "title": "pandas-pro",
+      "developer": "jeffallan",
+      "installs": 1536
+    },
+    {
+      "title": "ljg-writes",
+      "developer": "lijigang",
+      "installs": 1535
+    },
+    {
+      "title": "golang-samber-do",
+      "developer": "samber",
+      "installs": 1534
+    },
+    {
+      "title": "seo-page",
+      "developer": "agricidaniel",
+      "installs": 1533
+    },
+    {
+      "title": "code-simplification",
+      "developer": "addyosmani",
+      "installs": 1532
+    },
+    {
+      "title": "seo-content",
+      "developer": "agricidaniel",
+      "installs": 1531
+    },
+    {
+      "title": "geo-content-optimizer",
+      "developer": "aaron-he-zhu",
+      "installs": 1530
+    },
+    {
+      "title": "adk-deploy-guide",
+      "developer": "google",
+      "installs": 1529
+    },
+    {
+      "title": "postgres-pro",
+      "developer": "jeffallan",
+      "installs": 1528
+    },
+    {
+      "title": "adk-observability-guide",
+      "developer": "google",
+      "installs": 1527
+    },
+    {
+      "title": "tanstack-router-best-practices",
+      "developer": "deckardger",
+      "installs": 1526
+    },
+    {
+      "title": "planning-with-files-es",
+      "developer": "othmanadi",
+      "installs": 1525
+    },
+    {
+      "title": "seo-backlinks",
+      "developer": "agricidaniel",
+      "installs": 1524
+    },
+    {
+      "title": "seo-competitor-pages",
+      "developer": "agricidaniel",
+      "installs": 1523
+    },
+    {
+      "title": "architecture",
+      "developer": "markdown-viewer",
+      "installs": 1522
+    },
+    {
+      "title": "seo-sxo",
+      "developer": "agricidaniel",
+      "installs": 1521
+    },
+    {
+      "title": "adk-dev-guide",
+      "developer": "google",
+      "installs": 1520
+    },
+    {
+      "title": "adk-scaffold",
+      "developer": "google",
+      "installs": 1519
+    },
+    {
+      "title": "typescript-pro",
+      "developer": "jeffallan",
+      "installs": 1518
+    },
+    {
+      "title": "planning-with-files-ar",
+      "developer": "othmanadi",
+      "installs": 1517
+    },
+    {
+      "title": "design-taste-frontend",
+      "developer": "leonxlnx",
+      "installs": 1300
+    },
+    {
+      "title": "ui-ux-pro-max",
+      "developer": "nextlevelbuilder",
+      "installs": 1300
+    },
+    {
+      "title": "caveman-compress",
+      "developer": "juliusbrussee",
+      "installs": 1300
+    },
+    {
+      "title": "skill-creator",
+      "developer": "anthropics",
+      "installs": 1300
+    },
+    {
+      "title": "editorconfig",
+      "developer": "github",
+      "installs": 1264
+    },
+    {
+      "title": "everything-claude-code-conventions",
+      "developer": "affaan-m",
+      "installs": 1263
+    },
+    {
+      "title": "secret-scanning",
+      "developer": "github",
+      "installs": 1262
+    },
+    {
+      "title": "openclaw-persona-forge",
+      "developer": "affaan-m",
+      "installs": 1257
+    },
+    {
+      "title": "okx-wallet-portfolio",
+      "developer": "okx",
+      "installs": 1256
+    },
+    {
+      "title": "crosspost",
+      "developer": "affaan-m",
+      "installs": 1249
+    },
+    {
+      "title": "oauth",
+      "developer": "vercel-labs",
+      "installs": 1248
+    },
+    {
+      "title": "effect-ts",
+      "developer": "paulrberg",
+      "installs": 1247
+    },
+    {
+      "title": "clerk-chrome-extension-patterns",
+      "developer": "clerk",
+      "installs": 1246
+    },
+    {
+      "title": "prisma-driver-adapter-implementation",
+      "developer": "prisma",
+      "installs": 1245
+    },
+    {
+      "title": "ralphinho-rfc-pipeline",
+      "developer": "affaan-m",
+      "installs": 1237
+    },
+    {
+      "title": "elysiajs",
+      "developer": "elysiajs",
+      "installs": 1236
+    },
+    {
+      "title": "energy-procurement",
+      "developer": "affaan-m",
+      "installs": 1230
+    },
+    {
+      "title": "clerk-tanstack-patterns",
+      "developer": "clerk",
+      "installs": 1229
+    },
+    {
+      "title": "swift-concurrency-6-2",
+      "developer": "affaan-m",
+      "installs": 1228
+    },
+    {
+      "title": "claude-to-im",
+      "developer": "op7418",
+      "installs": 1227
+    },
+    {
+      "title": "marimo-pair",
+      "developer": "marimo-team",
+      "installs": 1226
+    },
+    {
+      "title": "grill-me",
+      "developer": "julianoczkowski",
+      "installs": 1225
+    },
+    {
+      "title": "gan-style-harness",
+      "developer": "affaan-m",
+      "installs": 1221
+    },
+    {
+      "title": "dbs-xhs-title",
+      "developer": "dontbesilent2025",
+      "installs": 1220
+    },
+    {
+      "title": "ljg-roundtable",
+      "developer": "lijigang",
+      "installs": 1219
+    },
+    {
+      "title": "research-ops",
+      "developer": "affaan-m",
+      "installs": 1215
+    },
+    {
+      "title": "fastapi-python",
+      "developer": "mindrally",
+      "installs": 1214
+    },
+    {
+      "title": "customer-billing-ops",
+      "developer": "affaan-m",
+      "installs": 1213
+    },
+    {
+      "title": "my-pull-requests",
+      "developer": "github",
+      "installs": 1212
+    },
+    {
+      "title": "swift-actor-persistence",
+      "developer": "affaan-m",
+      "installs": 1208
+    },
+    {
+      "title": "web-quality-audit",
+      "developer": "addyosmani",
+      "installs": 1207
+    },
+    {
+      "title": "high-end-visual-design",
+      "developer": "leonxlnx",
+      "installs": 1200
+    },
+    {
+      "title": "caveman-help",
+      "developer": "juliusbrussee",
+      "installs": 1200
+    },
+    {
+      "title": "caveman-review",
+      "developer": "juliusbrussee",
+      "installs": 1200
+    },
+    {
+      "title": "redesign-existing-projects",
+      "developer": "leonxlnx",
+      "installs": 1200
+    },
+    {
+      "title": "caveman-commit",
+      "developer": "juliusbrussee",
+      "installs": 1200
+    },
+    {
+      "title": "brainstorming",
+      "developer": "obra",
+      "installs": 1200
+    },
+    {
+      "title": "gpt-taste",
+      "developer": "leonxlnx",
+      "installs": 1200
+    },
+    {
+      "title": "compress",
+      "developer": "juliusbrussee",
+      "installs": 1200
+    },
+    {
+      "title": "vercel-composition-patterns",
+      "developer": "vercel-labs",
+      "installs": 1200
+    },
+    {
+      "title": "project-flow-ops",
+      "developer": "affaan-m",
+      "installs": 1199
+    },
+    {
+      "title": "claude-opus-4-5-migration",
+      "developer": "anthropics",
+      "installs": 1198
+    },
+    {
+      "title": "configure-ecc",
+      "developer": "affaan-m",
+      "installs": 1197
+    },
+    {
+      "title": "canary-watch",
+      "developer": "affaan-m",
+      "installs": 1196
+    },
+    {
+      "title": "perl-security",
+      "developer": "affaan-m",
+      "installs": 1195
+    },
+    {
+      "title": "dbs-ai-check",
+      "developer": "dontbesilent2025",
+      "installs": 1194
+    },
+    {
+      "title": "quality-nonconformance",
+      "developer": "affaan-m",
+      "installs": 1193
+    },
+    {
+      "title": "design-review",
+      "developer": "julianoczkowski",
+      "installs": 1192
+    },
+    {
+      "title": "perl-patterns",
+      "developer": "affaan-m",
+      "installs": 1191
+    },
+    {
+      "title": "x-api",
+      "developer": "affaan-m",
+      "installs": 1190
+    },
+    {
+      "title": "web-content-fetcher",
+      "developer": "shirenchuang",
+      "installs": 1189
+    },
+    {
+      "title": "shopify-customer",
+      "developer": "shopify",
+      "installs": 1188
+    },
+    {
+      "title": "product-capability",
+      "developer": "affaan-m",
+      "installs": 1187
+    },
+    {
+      "title": "strategic-compact",
+      "developer": "affaan-m",
+      "installs": 1186
+    },
+    {
+      "title": "update-implementation-plan",
+      "developer": "github",
+      "installs": 1185
+    },
+    {
+      "title": "email-ops",
+      "developer": "affaan-m",
+      "installs": 1184
+    },
+    {
+      "title": "hipaa-compliance",
+      "developer": "affaan-m",
+      "installs": 1183
+    },
+    {
+      "title": "design-brief",
+      "developer": "julianoczkowski",
+      "installs": 1182
+    },
+    {
+      "title": "investor-materials",
+      "developer": "affaan-m",
+      "installs": 1181
+    },
+    {
+      "title": "customs-trade-compliance",
+      "developer": "affaan-m",
+      "installs": 1180
+    },
+    {
+      "title": "okx-dex-market",
+      "developer": "okx",
+      "installs": 1179
+    },
+    {
+      "title": "workspace-surface-audit",
+      "developer": "affaan-m",
+      "installs": 1178
+    },
+    {
+      "title": "shopify-custom-data",
+      "developer": "shopify",
+      "installs": 1177
+    },
+    {
+      "title": "context7",
+      "developer": "intellectronica",
+      "installs": 1176
+    },
+    {
+      "title": "springboot-security",
+      "developer": "affaan-m",
+      "installs": 1175
+    },
+    {
+      "title": "connections-optimizer",
+      "developer": "affaan-m",
+      "installs": 1174
+    },
+    {
+      "title": "dbs-deconstruct",
+      "developer": "dontbesilent2025",
+      "installs": 1173
+    },
+    {
+      "title": "paperclip",
+      "developer": "paperclipai",
+      "installs": 1172
+    },
+    {
+      "title": "ecc-tools-cost-audit",
+      "developer": "affaan-m",
+      "installs": 1165
+    },
+    {
+      "title": "typescript-mcp-server-generator",
+      "developer": "github",
+      "installs": 1164
+    },
+    {
+      "title": "laravel-verification",
+      "developer": "affaan-m",
+      "installs": 1163
+    },
+    {
+      "title": "agent-eval",
+      "developer": "affaan-m",
+      "installs": 1162
+    },
+    {
+      "title": "hexagonal-architecture",
+      "developer": "affaan-m",
+      "installs": 1161
+    },
+    {
+      "title": "frontend-design",
+      "developer": "julianoczkowski",
+      "installs": 1160
+    },
+    {
+      "title": "design-flow",
+      "developer": "julianoczkowski",
+      "installs": 1159
+    },
+    {
+      "title": "cass",
+      "developer": "dicklesworthstone",
+      "installs": 1158
+    },
+    {
+      "title": "videodb",
+      "developer": "affaan-m",
+      "installs": 1150
+    },
+    {
+      "title": "release",
+      "developer": "tobi",
+      "installs": 1149
+    },
+    {
+      "title": "stock-analysis",
+      "developer": "gracefullight",
+      "installs": 1148
+    },
+    {
+      "title": "click-path-audit",
+      "developer": "affaan-m",
+      "installs": 1147
+    },
+    {
+      "title": "prisma-upgrade-v7",
+      "developer": "prisma",
+      "installs": 1146
+    },
+    {
+      "title": "nutrient-document-processing",
+      "developer": "affaan-m",
+      "installs": 1145
+    },
+    {
+      "title": "dotnet-patterns",
+      "developer": "affaan-m",
+      "installs": 1144
+    },
+    {
+      "title": "create-implementation-plan",
+      "developer": "github",
+      "installs": 1143
+    },
+    {
+      "title": "excalidraw-diagram-generator",
+      "developer": "github",
+      "installs": 1142
+    },
+    {
+      "title": "threejs-fundamentals",
+      "developer": "cloudai-x",
+      "installs": 1141
+    },
+    {
+      "title": "memory-merger",
+      "developer": "github",
+      "installs": 1140
+    },
+    {
+      "title": "dbs-hook",
+      "developer": "dontbesilent2025",
+      "installs": 1139
+    },
+    {
+      "title": "dart-flutter-patterns",
+      "developer": "affaan-m",
+      "installs": 1134
+    },
+    {
+      "title": "building-components",
+      "developer": "vercel",
+      "installs": 1133
+    },
+    {
+      "title": "django-verification",
+      "developer": "affaan-m",
+      "installs": 1132
+    },
+    {
+      "title": "design-tokens",
+      "developer": "julianoczkowski",
+      "installs": 1131
+    },
+    {
+      "title": "dbs-benchmark",
+      "developer": "dontbesilent2025",
+      "installs": 1130
+    },
+    {
+      "title": "plankton-code-quality",
+      "developer": "affaan-m",
+      "installs": 1129
+    },
+    {
+      "title": "documentation-lookup",
+      "developer": "affaan-m",
+      "installs": 1128
+    },
+    {
+      "title": "review-loop",
+      "developer": "camacho",
+      "installs": 1124
+    },
+    {
+      "title": "data-scraper-agent",
+      "developer": "affaan-m",
+      "installs": 1123
+    },
+    {
+      "title": "ai-regression-testing",
+      "developer": "affaan-m",
+      "installs": 1122
+    },
+    {
+      "title": "archive",
+      "developer": "camacho",
+      "installs": 1121
+    },
+    {
+      "title": "kotlin-exposed-patterns",
+      "developer": "affaan-m",
+      "installs": 1120
+    },
+    {
+      "title": "catchup",
+      "developer": "camacho",
+      "installs": 1119
+    },
+    {
+      "title": "dbs-diagnosis",
+      "developer": "dontbesilent2025",
+      "installs": 1118
+    },
+    {
+      "title": "capture",
+      "developer": "camacho",
+      "installs": 1117
+    },
+    {
+      "title": "regex-vs-llm-structured-text",
+      "developer": "affaan-m",
+      "installs": 1116
+    },
+    {
+      "title": "knowledge-ops",
+      "developer": "affaan-m",
+      "installs": 1115
+    },
+    {
+      "title": "session-start-hook",
+      "developer": "camacho",
+      "installs": 1114
+    },
+    {
+      "title": "autonomous",
+      "developer": "camacho",
+      "installs": 1113
+    },
+    {
+      "title": "deployment-patterns",
+      "developer": "affaan-m",
+      "installs": 1112
+    },
+    {
+      "title": "agentic-engineering",
+      "developer": "affaan-m",
+      "installs": 1111
+    },
+    {
+      "title": "status",
+      "developer": "camacho",
+      "installs": 1110
+    },
+    {
+      "title": "api-connector-builder",
+      "developer": "affaan-m",
+      "installs": 1109
+    },
+    {
+      "title": "github-ops",
+      "developer": "affaan-m",
+      "installs": 1108
+    },
+    {
+      "title": "build-skill",
+      "developer": "camacho",
+      "installs": 1107
+    },
+    {
+      "title": "claude-api",
+      "developer": "affaan-m",
+      "installs": 1106
+    },
+    {
+      "title": "inventory-demand-planning",
+      "developer": "affaan-m",
+      "installs": 1105
+    },
+    {
+      "title": "nodejs-keccak256",
+      "developer": "affaan-m",
+      "installs": 1104
+    },
+    {
+      "title": "webapp-testing",
+      "developer": "github",
+      "installs": 1103
+    },
+    {
+      "title": "plan-review",
+      "developer": "camacho",
+      "installs": 1102
+    },
+    {
+      "title": "dbs-action",
+      "developer": "dontbesilent2025",
+      "installs": 1101
+    },
+    {
+      "title": "minimalist-ui",
+      "developer": "leonxlnx",
+      "installs": 1100
+    },
+    {
+      "title": "evaluation-methodology",
+      "developer": "wshobson",
+      "installs": 842
+    },
+    {
+      "title": "pci-compliance",
+      "developer": "wshobson",
+      "installs": 841
+    },
+    {
+      "title": "flutter-setting-up-on-linux",
+      "developer": "flutter",
+      "installs": 840
+    },
+    {
+      "title": "onchain-pay-open-api",
+      "developer": "binance",
+      "installs": 839
+    },
+    {
+      "title": "linkerd-patterns",
+      "developer": "wshobson",
+      "installs": 838
+    },
+    {
+      "title": "screen-reader-testing",
+      "developer": "wshobson",
+      "installs": 837
+    },
+    {
+      "title": "paypal-integration",
+      "developer": "wshobson",
+      "installs": 836
+    },
+    {
+      "title": "create-readme",
+      "developer": "github",
+      "installs": 835
+    },
+    {
+      "title": "employment-contract-templates",
+      "developer": "wshobson",
+      "installs": 834
+    },
+    {
+      "title": "framework-selection",
+      "developer": "langchain-ai",
+      "installs": 833
+    },
+    {
+      "title": "langchain-middleware",
+      "developer": "langchain-ai",
+      "installs": 832
+    },
+    {
+      "title": "defi-protocol-templates",
+      "developer": "wshobson",
+      "installs": 831
+    },
+    {
+      "title": "sast-configuration",
+      "developer": "wshobson",
+      "installs": 830
+    },
+    {
+      "title": "baseline-ui",
+      "developer": "ibelick",
+      "installs": 829
+    },
+    {
+      "title": "mtls-configuration",
+      "developer": "wshobson",
+      "installs": 828
+    },
+    {
+      "title": "cqrs-implementation",
+      "developer": "wshobson",
+      "installs": 827
+    },
+    {
+      "title": "payment-assistant",
+      "developer": "binance",
+      "installs": 826
+    },
+    {
+      "title": "projection-patterns",
+      "developer": "wshobson",
+      "installs": 825
+    },
+    {
+      "title": "shopify-admin",
+      "developer": "shopify",
+      "installs": 824
+    },
+    {
+      "title": "workflow-patterns",
+      "developer": "wshobson",
+      "installs": 823
+    },
+    {
+      "title": "go-concurrency-patterns",
+      "developer": "wshobson",
+      "installs": 822
+    },
+    {
+      "title": "hybrid-search-implementation",
+      "developer": "wshobson",
+      "installs": 821
+    },
+    {
+      "title": "frontend-design",
+      "developer": "affaan-m",
+      "installs": 820
+    },
+    {
+      "title": "team-composition-analysis",
+      "developer": "wshobson",
+      "installs": 819
+    },
+    {
+      "title": "nuxt",
+      "developer": "antfu",
+      "installs": 818
+    },
+    {
+      "title": "p2p",
+      "developer": "binance",
+      "installs": 817
+    },
+    {
+      "title": "cloudbase",
+      "developer": "tencentcloudbase",
+      "installs": 816
+    },
+    {
+      "title": "service-mesh-observability",
+      "developer": "wshobson",
+      "installs": 806
+    },
+    {
+      "title": "deep-agents-orchestration",
+      "developer": "langchain-ai",
+      "installs": 805
+    },
+    {
+      "title": "fixing-accessibility",
+      "developer": "ibelick",
+      "installs": 804
+    },
+    {
+      "title": "protect-mcp-setup",
+      "developer": "wshobson",
+      "installs": 803
+    },
+    {
+      "title": "incident-runbook-templates",
+      "developer": "wshobson",
+      "installs": 802
+    },
+    {
+      "title": "parallel-feature-development",
+      "developer": "wshobson",
+      "installs": 801
+    },
+    {
+      "title": "langchain-rag",
+      "developer": "langchain-ai",
+      "installs": 800
+    },
+    {
+      "title": "temporal-python-testing",
+      "developer": "wshobson",
+      "installs": 795
+    },
+    {
+      "title": "conventional-commit",
+      "developer": "github",
+      "installs": 794
+    },
+    {
+      "title": "data-quality-frameworks",
+      "developer": "wshobson",
+      "installs": 790
+    },
+    {
+      "title": "mcp-integration",
+      "developer": "anthropics",
+      "installs": 789
+    },
+    {
+      "title": "migrate-to-shoehorn",
+      "developer": "mattpocock",
+      "installs": 788
+    },
+    {
+      "title": "shellcheck-configuration",
+      "developer": "wshobson",
+      "installs": 787
+    },
+    {
+      "title": "langgraph-human-in-the-loop",
+      "developer": "langchain-ai",
+      "installs": 786
+    },
+    {
+      "title": "vector-index-tuning",
+      "developer": "wshobson",
+      "installs": 785
+    },
+    {
+      "title": "langchain-architecture",
+      "developer": "wshobson",
+      "installs": 784
+    },
+    {
+      "title": "vue-best-practices",
+      "developer": "antfu",
+      "installs": 783
+    },
+    {
+      "title": "threat-mitigation-mapping",
+      "developer": "wshobson",
+      "installs": 782
+    },
+    {
+      "title": "playwright-generate-test",
+      "developer": "github",
+      "installs": 781
+    },
+    {
+      "title": "similarity-search-patterns",
+      "developer": "wshobson",
+      "installs": 780
+    },
+    {
+      "title": "task-coordination-strategies",
+      "developer": "wshobson",
+      "installs": 779
+    },
+    {
+      "title": "frontend-patterns",
+      "developer": "affaan-m",
+      "installs": 778
+    },
+    {
+      "title": "zsxq-topic",
+      "developer": "unnoo",
+      "installs": 777
+    },
+    {
+      "title": "startup-metrics-framework",
+      "developer": "wshobson",
+      "installs": 776
+    },
+    {
+      "title": "airflow-dag-patterns",
+      "developer": "wshobson",
+      "installs": 775
+    },
+    {
+      "title": "golang-pro",
+      "developer": "jeffallan",
+      "installs": 774
+    },
+    {
+      "title": "multi-cloud-architecture",
+      "developer": "wshobson",
+      "installs": 773
+    },
+    {
+      "title": "competitive-landscape",
+      "developer": "wshobson",
+      "installs": 772
+    },
+    {
+      "title": "zsxq-user",
+      "developer": "unnoo",
+      "installs": 771
+    },
+    {
+      "title": "billing-automation",
+      "developer": "wshobson",
+      "installs": 770
+    },
+    {
+      "title": "hono",
+      "developer": "yusukebe",
+      "installs": 769
+    },
+    {
+      "title": "stride-analysis-patterns",
+      "developer": "wshobson",
+      "installs": 768
+    },
+    {
+      "title": "web3-testing",
+      "developer": "wshobson",
+      "installs": 767
+    },
+    {
+      "title": "attack-tree-construction",
+      "developer": "wshobson",
+      "installs": 766
+    },
+    {
+      "title": "langchain-fundamentals",
+      "developer": "langchain-ai",
+      "installs": 765
+    },
+    {
+      "title": "documentation-writer",
+      "developer": "github",
+      "installs": 764
+    },
+    {
+      "title": "zsxq-note",
+      "developer": "unnoo",
+      "installs": 763
+    },
+    {
+      "title": "nx-workspace-patterns",
+      "developer": "wshobson",
+      "installs": 762
+    },
+    {
+      "title": "terraform-module-library",
+      "developer": "wshobson",
+      "installs": 761
+    },
+    {
+      "title": "dependency-upgrade",
+      "developer": "wshobson",
+      "installs": 760
+    },
+    {
+      "title": "zoom-out",
+      "developer": "mattpocock",
+      "installs": 759
+    },
+    {
+      "title": "zsxq-shared",
+      "developer": "unnoo",
+      "installs": 758
+    },
+    {
+      "title": "command-development",
+      "developer": "anthropics",
+      "installs": 757
+    },
+    {
+      "title": "parallel-debugging",
+      "developer": "wshobson",
+      "installs": 756
+    },
+    {
+      "title": "rust-best-practices",
+      "developer": "apollographql",
+      "installs": 755
+    },
+    {
+      "title": "startup-financial-modeling",
+      "developer": "wshobson",
+      "installs": 754
+    },
+    {
+      "title": "prometheus-configuration",
+      "developer": "wshobson",
+      "installs": 753
+    },
+    {
+      "title": "memory-forensics",
+      "developer": "wshobson",
+      "installs": 752
+    },
+    {
+      "title": "laravel-specialist",
+      "developer": "jeffallan",
+      "installs": 751
+    },
+    {
+      "title": "langgraph-persistence",
+      "developer": "langchain-ai",
+      "installs": 750
+    },
+    {
+      "title": "risk-metrics-calculation",
+      "developer": "wshobson",
+      "installs": 745
+    },
+    {
+      "title": "zsxq-group",
+      "developer": "unnoo",
+      "installs": 744
+    },
+    {
+      "title": "solidity-security",
+      "developer": "wshobson",
+      "installs": 740
+    },
+    {
+      "title": "slidev",
+      "developer": "antfu",
+      "installs": 739
+    },
+    {
+      "title": "golang-patterns",
+      "developer": "affaan-m",
+      "installs": 738
+    },
+    {
+      "title": "market-sizing-analysis",
+      "developer": "wshobson",
+      "installs": 737
+    },
+    {
+      "title": "secrets-management",
+      "developer": "wshobson",
+      "installs": 736
+    },
+    {
+      "title": "astro",
+      "developer": "astrolicious",
+      "installs": 735
+    },
+    {
+      "title": "golang-testing",
+      "developer": "affaan-m",
+      "installs": 734
+    },
+    {
+      "title": "clerk-orgs",
+      "developer": "clerk",
+      "installs": 733
+    },
+    {
+      "title": "flutter-setting-up-on-windows",
+      "developer": "flutter",
+      "installs": 732
+    },
+    {
+      "title": "scaffold-exercises",
+      "developer": "mattpocock",
+      "installs": 731
+    },
+    {
+      "title": "documentation",
+      "developer": "anthropics",
+      "installs": 730
+    },
+    {
+      "title": "anti-reversing-techniques",
+      "developer": "wshobson",
+      "installs": 729
+    },
+    {
+      "title": "github-triage",
+      "developer": "mattpocock",
+      "installs": 728
+    },
+    {
+      "title": "react-modernization",
+      "developer": "wshobson",
+      "installs": 727
+    },
+    {
+      "title": "binance-tokenized-securities-info",
+      "developer": "binance",
+      "installs": 726
+    },
+    {
+      "title": "visual-design-foundations",
+      "developer": "wshobson",
+      "installs": 725
+    },
+    {
+      "title": "bash-defensive-patterns",
+      "developer": "wshobson",
+      "installs": 724
+    },
+    {
+      "title": "wcag-audit-patterns",
+      "developer": "wshobson",
+      "installs": 723
+    },
+    {
+      "title": "heroui-react",
+      "developer": "heroui-inc",
+      "installs": 722
+    },
+    {
+      "title": "apify-generate-output-schema",
+      "developer": "apify",
+      "installs": 721
+    },
+    {
+      "title": "fixing-motion-performance",
+      "developer": "ibelick",
+      "installs": 720
+    },
+    {
+      "title": "protocol-reverse-engineering",
+      "developer": "wshobson",
+      "installs": 719
+    },
+    {
+      "title": "embedding-strategies",
+      "developer": "wshobson",
+      "installs": 718
+    },
+    {
+      "title": "workflow-orchestration-patterns",
+      "developer": "wshobson",
+      "installs": 717
+    },
+    {
+      "title": "azure-messaging",
+      "developer": "microsoft",
+      "installs": 716
+    },
+    {
+      "title": "ctf-malware",
+      "developer": "ljagiello",
+      "installs": 715
+    },
+    {
+      "title": "ctf-osint",
+      "developer": "ljagiello",
+      "installs": 714
+    },
+    {
+      "title": "apify-actorization",
+      "developer": "apify",
+      "installs": 713
+    },
+    {
+      "title": "python-resilience",
+      "developer": "wshobson",
+      "installs": 712
+    },
+    {
+      "title": "memory-safety-patterns",
+      "developer": "wshobson",
+      "installs": 711
+    },
+    {
+      "title": "security-review",
+      "developer": "affaan-m",
+      "installs": 710
+    },
+    {
+      "title": "refactor",
+      "developer": "github",
+      "installs": 709
+    },
+    {
+      "title": "python-resource-management",
+      "developer": "wshobson",
+      "installs": 708
+    },
+    {
+      "title": "cost-optimization",
+      "developer": "wshobson",
+      "installs": 707
+    },
+    {
+      "title": "executing-plans",
+      "developer": "obra",
+      "installs": 178
+    },
+    {
+      "title": "verification-before-completion",
+      "developer": "obra",
+      "installs": 177
+    },
+    {
+      "title": "firecrawl-interact",
+      "developer": "firecrawl",
+      "installs": 176
+    },
+    {
+      "title": "firecrawl-download",
+      "developer": "firecrawl",
+      "installs": 175
+    },
+    {
+      "title": "docx",
+      "developer": "anthropics",
+      "installs": 174
+    },
+    {
+      "title": "next-best-practices",
+      "developer": "vercel-labs",
+      "installs": 173
+    },
+    {
+      "title": "firecrawl-map",
+      "developer": "firecrawl",
+      "installs": 172
+    },
+    {
+      "title": "firecrawl-crawl",
+      "developer": "firecrawl",
+      "installs": 171
+    },
+    {
+      "title": "firecrawl-agent",
+      "developer": "firecrawl",
+      "installs": 170
+    },
+    {
+      "title": "vercel-react-native-skills",
+      "developer": "vercel-labs",
+      "installs": 169
+    },
+    {
+      "title": "firecrawl-scrape",
+      "developer": "firecrawl",
+      "installs": 168
+    },
+    {
+      "title": "firecrawl-search",
+      "developer": "firecrawl",
+      "installs": 167
+    },
+    {
+      "title": "using-superpowers",
+      "developer": "obra",
+      "installs": 166
+    },
+    {
+      "title": "grill-me",
+      "developer": "mattpocock",
+      "installs": 165
+    },
+    {
+      "title": "firecrawl",
+      "developer": "firecrawl",
+      "installs": 164
+    },
+    {
+      "title": "emil-design-eng",
+      "developer": "emilkowalski",
+      "installs": 163
+    },
+    {
+      "title": "copywriting",
+      "developer": "coreyhaines31",
+      "installs": 162
+    },
+    {
+      "title": "seo-audit",
+      "developer": "coreyhaines31",
+      "installs": 161
+    },
+    {
+      "title": "requesting-code-review",
+      "developer": "obra",
+      "installs": 160
+    },
+    {
+      "title": "test-driven-development",
+      "developer": "obra",
+      "installs": 159
+    },
+    {
+      "title": "pptx",
+      "developer": "anthropics",
+      "installs": 158
+    },
+    {
+      "title": "systematic-debugging",
+      "developer": "obra",
+      "installs": 157
+    },
+    {
+      "title": "pdf",
+      "developer": "anthropics",
+      "installs": 156
+    },
+    {
+      "title": "convex-performance-audit",
+      "developer": "get-convex",
+      "installs": 150
+    },
+    {
+      "title": "developing-genkit-go",
+      "developer": "firebase",
+      "installs": 149
+    },
+    {
+      "title": "writing-plans",
+      "developer": "obra",
+      "installs": 148
+    },
+    {
+      "title": "developing-genkit-dart",
+      "developer": "firebase",
+      "installs": 147
+    },
+    {
+      "title": "firebase-firestore-enterprise-native-mode",
+      "developer": "firebase",
+      "installs": 146
+    },
+    {
+      "title": "sleek-design-mobile-apps",
+      "developer": "sleekdotdesign",
+      "installs": 145
+    },
+    {
+      "title": "firebase-basics",
+      "developer": "firebase",
+      "installs": 136
+    },
+    {
+      "title": "product-photography",
+      "developer": "skillssh",
+      "installs": 127
+    },
+    {
+      "title": "lark-approval",
+      "developer": "larksuite",
+      "installs": 117
+    },
+    {
+      "title": "landing-page-design",
+      "developer": "skillssh",
+      "installs": 116
+    },
+    {
+      "title": "lark-im",
+      "developer": "larksuite",
+      "installs": 104
+    },
+    {
+      "title": "value",
+      "developer": "hugmouse",
+      "installs": 103
+    },
+    {
+      "title": "lark-doc",
+      "developer": "larksuite",
+      "installs": 102
+    }
+  ]
+}

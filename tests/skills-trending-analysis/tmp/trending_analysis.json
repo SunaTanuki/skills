@@ -1,0 +1,921 @@
+{
+  "ok": true,
+  "summary": {
+    "total_skills": 1117,
+    "total_installs": 2610556,
+    "unique_developers": 219,
+    "unique_keywords": 1300
+  },
+  "skill_ranking": [
+    {
+      "rank": 1,
+      "title": "soultrace",
+      "developer": "soultrace-ai",
+      "installs": 31700
+    },
+    {
+      "rank": 2,
+      "title": "ai-image-generation",
+      "developer": "skillssh",
+      "installs": 13800
+    },
+    {
+      "rank": 3,
+      "title": "find-skills",
+      "developer": "vercel-labs",
+      "installs": 11600
+    },
+    {
+      "rank": 4,
+      "title": "memory-setup",
+      "developer": "sundial-org",
+      "installs": 4034
+    },
+    {
+      "rank": 5,
+      "title": "react-code-review",
+      "developer": "giuseppe-trisciuoglio",
+      "installs": 4033
+    },
+    {
+      "rank": 6,
+      "title": "sf-soql",
+      "developer": "jaganpro",
+      "installs": 4032
+    },
+    {
+      "rank": 7,
+      "title": "skillmarketplace",
+      "developer": "starchild-ai-agent",
+      "installs": 4031
+    },
+    {
+      "rank": 8,
+      "title": "db-migrate",
+      "developer": "medusajs",
+      "installs": 4030
+    },
+    {
+      "rank": 9,
+      "title": "value-prop-statements",
+      "developer": "phuryn",
+      "installs": 4029
+    },
+    {
+      "rank": 10,
+      "title": "pixijs-scene-core-concepts",
+      "developer": "pixijs",
+      "installs": 4028
+    },
+    {
+      "rank": 11,
+      "title": "nextjs-code-review",
+      "developer": "giuseppe-trisciuoglio",
+      "installs": 4027
+    },
+    {
+      "rank": 12,
+      "title": "pixijs-scene-dom-container",
+      "developer": "pixijs",
+      "installs": 4026
+    },
+    {
+      "rank": 13,
+      "title": "ansoff-matrix",
+      "developer": "phuryn",
+      "installs": 4025
+    },
+    {
+      "rank": 14,
+      "title": "asc-localize-metadata",
+      "developer": "rorkai",
+      "installs": 4024
+    },
+    {
+      "rank": 15,
+      "title": "provider-actions",
+      "developer": "hashicorp",
+      "installs": 4023
+    },
+    {
+      "rank": 16,
+      "title": "pixijs-scene-container",
+      "developer": "pixijs",
+      "installs": 4021
+    },
+    {
+      "rank": 17,
+      "title": "context-engineering-collection",
+      "developer": "muratcankoylan",
+      "installs": 4020
+    },
+    {
+      "rank": 18,
+      "title": "aws-lambda-python-integration",
+      "developer": "giuseppe-trisciuoglio",
+      "installs": 4019
+    },
+    {
+      "rank": 19,
+      "title": "draft-nda",
+      "developer": "phuryn",
+      "installs": 4018
+    },
+    {
+      "rank": 20,
+      "title": "aws-sdk-java-v2-core",
+      "developer": "giuseppe-trisciuoglio",
+      "installs": 4017
+    }
+  ],
+  "keyword_ranking_by_installs": [
+    {
+      "keyword": "ai",
+      "skill_count": 20,
+      "total_installs": 57922,
+      "rank": 1
+    },
+    {
+      "keyword": "best",
+      "skill_count": 26,
+      "total_installs": 56926,
+      "rank": 2
+    },
+    {
+      "keyword": "practices",
+      "skill_count": 26,
+      "total_installs": 56926,
+      "rank": 3
+    },
+    {
+      "keyword": "development",
+      "skill_count": 22,
+      "total_installs": 55264,
+      "rank": 4
+    },
+    {
+      "keyword": "design",
+      "skill_count": 28,
+      "total_installs": 50734,
+      "rank": 5
+    },
+    {
+      "keyword": "react",
+      "skill_count": 19,
+      "total_installs": 48411,
+      "rank": 6
+    },
+    {
+      "keyword": "api",
+      "skill_count": 21,
+      "total_installs": 47190,
+      "rank": 7
+    },
+    {
+      "keyword": "review",
+      "skill_count": 18,
+      "total_installs": 45467,
+      "rank": 8
+    },
+    {
+      "keyword": "patterns",
+      "skill_count": 27,
+      "total_installs": 37591,
+      "rank": 9
+    },
+    {
+      "keyword": "data",
+      "skill_count": 14,
+      "total_installs": 35608,
+      "rank": 10
+    },
+    {
+      "keyword": "code",
+      "skill_count": 16,
+      "total_installs": 35529,
+      "rank": 11
+    },
+    {
+      "keyword": "analysis",
+      "skill_count": 17,
+      "total_installs": 34949,
+      "rank": 12
+    },
+    {
+      "keyword": "pixijs",
+      "skill_count": 9,
+      "total_installs": 34612,
+      "rank": 13
+    },
+    {
+      "keyword": "and",
+      "skill_count": 13,
+      "total_installs": 33379,
+      "rank": 14
+    },
+    {
+      "keyword": "skill",
+      "skill_count": 12,
+      "total_installs": 33234,
+      "rank": 15
+    },
+    {
+      "keyword": "soultrace",
+      "skill_count": 1,
+      "total_installs": 31700,
+      "rank": 16
+    },
+    {
+      "keyword": "aws",
+      "skill_count": 8,
+      "total_installs": 31427,
+      "rank": 17
+    },
+    {
+      "keyword": "ads",
+      "skill_count": 12,
+      "total_installs": 29451,
+      "rank": 18
+    },
+    {
+      "keyword": "web",
+      "skill_count": 13,
+      "total_installs": 28878,
+      "rank": 19
+    },
+    {
+      "keyword": "architecture",
+      "skill_count": 11,
+      "total_installs": 28117,
+      "rank": 20
+    }
+  ],
+  "keyword_ranking_by_skill_count": [
+    {
+      "keyword": "design",
+      "skill_count": 28,
+      "total_installs": 50734,
+      "rank": 1
+    },
+    {
+      "keyword": "patterns",
+      "skill_count": 27,
+      "total_installs": 37591,
+      "rank": 2
+    },
+    {
+      "keyword": "best",
+      "skill_count": 26,
+      "total_installs": 56926,
+      "rank": 3
+    },
+    {
+      "keyword": "practices",
+      "skill_count": 26,
+      "total_installs": 56926,
+      "rank": 4
+    },
+    {
+      "keyword": "development",
+      "skill_count": 22,
+      "total_installs": 55264,
+      "rank": 5
+    },
+    {
+      "keyword": "api",
+      "skill_count": 21,
+      "total_installs": 47190,
+      "rank": 6
+    },
+    {
+      "keyword": "ai",
+      "skill_count": 20,
+      "total_installs": 57922,
+      "rank": 7
+    },
+    {
+      "keyword": "react",
+      "skill_count": 19,
+      "total_installs": 48411,
+      "rank": 8
+    },
+    {
+      "keyword": "review",
+      "skill_count": 18,
+      "total_installs": 45467,
+      "rank": 9
+    },
+    {
+      "keyword": "analysis",
+      "skill_count": 17,
+      "total_installs": 34949,
+      "rank": 10
+    },
+    {
+      "keyword": "code",
+      "skill_count": 16,
+      "total_installs": 35529,
+      "rank": 11
+    },
+    {
+      "keyword": "seo",
+      "skill_count": 16,
+      "total_installs": 24923,
+      "rank": 12
+    },
+    {
+      "keyword": "data",
+      "skill_count": 14,
+      "total_installs": 35608,
+      "rank": 13
+    },
+    {
+      "keyword": "and",
+      "skill_count": 13,
+      "total_installs": 33379,
+      "rank": 14
+    },
+    {
+      "keyword": "web",
+      "skill_count": 13,
+      "total_installs": 28878,
+      "rank": 15
+    },
+    {
+      "keyword": "agent",
+      "skill_count": 13,
+      "total_installs": 25598,
+      "rank": 16
+    },
+    {
+      "keyword": "testing",
+      "skill_count": 13,
+      "total_installs": 21224,
+      "rank": 17
+    },
+    {
+      "keyword": "audit",
+      "skill_count": 13,
+      "total_installs": 20241,
+      "rank": 18
+    },
+    {
+      "keyword": "skill",
+      "skill_count": 12,
+      "total_installs": 33234,
+      "rank": 19
+    },
+    {
+      "keyword": "ads",
+      "skill_count": 12,
+      "total_installs": 29451,
+      "rank": 20
+    }
+  ],
+  "developer_ranking": [
+    {
+      "developer": "mindrally",
+      "skill_count": 69,
+      "total_installs": 189923,
+      "top_keywords": [
+        "development",
+        "typescript",
+        "best",
+        "practices",
+        "react"
+      ],
+      "top_skills_by_installs": [
+        {
+          "title": "rest-api-django",
+          "installs": 3234
+        },
+        {
+          "title": "netlify-development",
+          "installs": 3228
+        },
+        {
+          "title": "expo-react-native-javascript-best-practices",
+          "installs": 3226
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "developer": "anthropics",
+      "skill_count": 44,
+      "total_installs": 132279,
+      "top_keywords": [
+        "review",
+        "data",
+        "design",
+        "performance",
+        "pipeline"
+      ],
+      "top_skills_by_installs": [
+        {
+          "title": "change-request",
+          "installs": 4002
+        },
+        {
+          "title": "cowork-plugin-customizer",
+          "installs": 3993
+        },
+        {
+          "title": "enrich-lead",
+          "installs": 3977
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "developer": "jwynia",
+      "skill_count": 34,
+      "total_installs": 99577,
+      "top_keywords": [
+        "generator",
+        "story",
+        "workflow",
+        "check",
+        "fiction"
+      ],
+      "top_skills_by_installs": [
+        {
+          "title": "architecture-decision",
+          "installs": 3222
+        },
+        {
+          "title": "economic-systems",
+          "installs": 3219
+        },
+        {
+          "title": "governance-systems",
+          "installs": 3213
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "developer": "claude-office-skills",
+      "skill_count": 39,
+      "total_installs": 96995,
+      "top_keywords": [
+        "automation",
+        "data",
+        "generator",
+        "pdf",
+        "ai"
+      ],
+      "top_skills_by_installs": [
+        {
+          "title": "offer-letter-generator",
+          "installs": 2833
+        },
+        {
+          "title": "customer-success",
+          "installs": 2825
+        },
+        {
+          "title": "layout-analyzer",
+          "installs": 2822
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "developer": "yaklang",
+      "skill_count": 31,
+      "total_installs": 89707,
+      "top_keywords": [
+        "and",
+        "bypass",
+        "pentesting",
+        "techniques",
+        "abuse"
+      ],
+      "top_skills_by_installs": [
+        {
+          "title": "vm-and-bytecode-reverse",
+          "installs": 3231
+        },
+        {
+          "title": "waf-bypass-techniques",
+          "installs": 3229
+        },
+        {
+          "title": "code-obfuscation-deobfuscation",
+          "installs": 3220
+        }
+      ],
+      "rank": 5
+    },
+    {
+      "developer": "phuryn",
+      "skill_count": 22,
+      "total_installs": 84260,
+      "top_keywords": [
+        "analysis",
+        "brainstorm",
+        "ideas",
+        "new",
+        "strategy"
+      ],
+      "top_skills_by_installs": [
+        {
+          "title": "value-prop-statements",
+          "installs": 4029
+        },
+        {
+          "title": "ansoff-matrix",
+          "installs": 4025
+        },
+        {
+          "title": "draft-nda",
+          "installs": 4018
+        }
+      ],
+      "rank": 6
+    },
+    {
+      "developer": "giuseppe-trisciuoglio",
+      "skill_count": 21,
+      "total_installs": 81904,
+      "top_keywords": [
+        "aws",
+        "boot",
+        "nextjs",
+        "spring",
+        "integration"
+      ],
+      "top_skills_by_installs": [
+        {
+          "title": "react-code-review",
+          "installs": 4033
+        },
+        {
+          "title": "nextjs-code-review",
+          "installs": 4027
+        },
+        {
+          "title": "aws-lambda-python-integration",
+          "installs": 4019
+        }
+      ],
+      "rank": 7
+    },
+    {
+      "developer": "affaan-m",
+      "skill_count": 55,
+      "total_installs": 62201,
+      "top_keywords": [
+        "patterns",
+        "ops",
+        "api",
+        "audit",
+        "security"
+      ],
+      "top_skills_by_installs": [
+        {
+          "title": "everything-claude-code-conventions",
+          "installs": 1263
+        },
+        {
+          "title": "openclaw-persona-forge",
+          "installs": 1257
+        },
+        {
+          "title": "crosspost",
+          "installs": 1249
+        }
+      ],
+      "rank": 8
+    },
+    {
+      "developer": "skillssh",
+      "skill_count": 23,
+      "total_installs": 60396,
+      "top_keywords": [
+        "ai",
+        "ui",
+        "content",
+        "elevenlabs",
+        "generation"
+      ],
+      "top_skills_by_installs": [
+        {
+          "title": "ai-image-generation",
+          "installs": 13800
+        },
+        {
+          "title": "ai-product-photography",
+          "installs": 2372
+        },
+        {
+          "title": "agent-ui",
+          "installs": 2369
+        }
+      ],
+      "rank": 9
+    },
+    {
+      "developer": "patternsdev",
+      "skill_count": 17,
+      "total_installs": 58261,
+      "top_keywords": [
+        "pattern",
+        "rendering",
+        "server",
+        "side",
+        "ai"
+      ],
+      "top_skills_by_installs": [
+        {
+          "title": "mixin-pattern",
+          "installs": 3944
+        },
+        {
+          "title": "progressive-hydration",
+          "installs": 3932
+        },
+        {
+          "title": "view-transitions",
+          "installs": 3625
+        }
+      ],
+      "rank": 10
+    },
+    {
+      "developer": "trailofbits",
+      "skill_count": 21,
+      "total_installs": 56992,
+      "top_keywords": [
+        "scanner",
+        "vulnerability",
+        "audit",
+        "code",
+        "fuzzing"
+      ],
+      "top_skills_by_installs": [
+        {
+          "title": "libfuzzer",
+          "installs": 2834
+        },
+        {
+          "title": "guidelines-advisor",
+          "installs": 2826
+        },
+        {
+          "title": "zeroize-audit",
+          "installs": 2812
+        }
+      ],
+      "rank": 11
+    },
+    {
+      "developer": "site",
+      "skill_count": 19,
+      "total_installs": 56310,
+      "top_keywords": [
+        "byted",
+        "sdk",
+        "skill",
+        "web",
+        "agent"
+      ],
+      "top_skills_by_installs": [
+        {
+          "title": "byted-mediakit-voiceover-editing",
+          "installs": 4009
+        },
+        {
+          "title": "xiaohongshu-cn",
+          "installs": 3988
+        },
+        {
+          "title": "agent-browser",
+          "installs": 3919
+        }
+      ],
+      "rank": 12
+    },
+    {
+      "developer": "steipete",
+      "skill_count": 16,
+      "total_installs": 52707,
+      "top_keywords": [
+        "api",
+        "apple",
+        "blogwatcher",
+        "camsnap",
+        "discord"
+      ],
+      "top_skills_by_installs": [
+        {
+          "title": "model-usage",
+          "installs": 3632
+        },
+        {
+          "title": "blogwatcher",
+          "installs": 3629
+        },
+        {
+          "title": "gh-issues",
+          "installs": 3622
+        }
+      ],
+      "rank": 13
+    },
+    {
+      "developer": "vercel-labs",
+      "skill_count": 19,
+      "total_installs": 51655,
+      "top_keywords": [
+        "react",
+        "best",
+        "practices",
+        "vercel",
+        "native"
+      ],
+      "top_skills_by_installs": [
+        {
+          "title": "find-skills",
+          "installs": 11600
+        },
+        {
+          "title": "ink",
+          "installs": 4012
+        },
+        {
+          "title": "skill-creator",
+          "installs": 4006
+        }
+      ],
+      "rank": 14
+    },
+    {
+      "developer": "dpearson2699",
+      "skill_count": 17,
+      "total_installs": 49902,
+      "top_keywords": [
+        "swift",
+        "swiftui",
+        "device",
+        "activitykit",
+        "adattributionkit"
+      ],
+      "top_skills_by_installs": [
+        {
+          "title": "adattributionkit",
+          "installs": 3216
+        },
+        {
+          "title": "avkit",
+          "installs": 3188
+        },
+        {
+          "title": "app-clips",
+          "installs": 3185
+        }
+      ],
+      "rank": 15
+    },
+    {
+      "developer": "refoundai",
+      "skill_count": 24,
+      "total_installs": 46803,
+      "top_keywords": [
+        "product",
+        "sales",
+        "a",
+        "ai",
+        "analysis"
+      ],
+      "top_skills_by_installs": [
+        {
+          "title": "building-a-promotion-case",
+          "installs": 2034
+        },
+        {
+          "title": "planning-under-uncertainty",
+          "installs": 2030
+        },
+        {
+          "title": "technical-roadmaps",
+          "installs": 2022
+        }
+      ],
+      "rank": 16
+    },
+    {
+      "developer": "agricidaniel",
+      "skill_count": 24,
+      "total_installs": 45930,
+      "top_keywords": [
+        "seo",
+        "ads",
+        "apple",
+        "audit",
+        "backlinks"
+      ],
+      "top_skills_by_installs": [
+        {
+          "title": "ads-apple",
+          "installs": 2432
+        },
+        {
+          "title": "ads-create",
+          "installs": 2428
+        },
+        {
+          "title": "ads-linkedin",
+          "installs": 2423
+        }
+      ],
+      "rank": 17
+    },
+    {
+      "developer": "wshobson",
+      "skill_count": 58,
+      "total_installs": 44991,
+      "top_keywords": [
+        "patterns",
+        "configuration",
+        "analysis",
+        "python",
+        "templates"
+      ],
+      "top_skills_by_installs": [
+        {
+          "title": "evaluation-methodology",
+          "installs": 842
+        },
+        {
+          "title": "pci-compliance",
+          "installs": 841
+        },
+        {
+          "title": "linkerd-patterns",
+          "installs": 838
+        }
+      ],
+      "rank": 18
+    },
+    {
+      "developer": "jeffallan",
+      "skill_count": 25,
+      "total_installs": 42644,
+      "top_keywords": [
+        "pro",
+        "expert",
+        "engineer",
+        "architect",
+        "code"
+      ],
+      "top_skills_by_installs": [
+        {
+          "title": "cpp-pro",
+          "installs": 2421
+        },
+        {
+          "title": "ml-pipeline",
+          "installs": 2319
+        },
+        {
+          "title": "rag-architect",
+          "installs": 2029
+        }
+      ],
+      "rank": 19
+    },
+    {
+      "developer": "github",
+      "skill_count": 23,
+      "total_installs": 37040,
+      "top_keywords": [
+        "create",
+        "design",
+        "generator",
+        "implementation",
+        "plan"
+      ],
+      "top_skills_by_installs": [
+        {
+          "title": "game-engine",
+          "installs": 3209
+        },
+        {
+          "title": "playwright-explore-website",
+          "installs": 3162
+        },
+        {
+          "title": "postgresql-code-review",
+          "installs": 3118
+        }
+      ],
+      "rank": 20
+    }
+  ],
+  "concentration": {
+    "top_10_skill_install_share": 0.0327,
+    "top_10_developer_install_share": 0.366
+  }
+}
