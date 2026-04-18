@@ -125,7 +125,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Fetch trending skills directly from skills.sh")
     parser.add_argument("--keyword", type=str, help="Optional keyword to filter by", default=None)
     parser.add_argument("--refresh", action="store_true", help="Ignore cache and force fetch")
-    parser.add_argument("--limit", type=int, default=100, help="Number of items to fetch (default: 100)")
+    parser.add_argument("--limit", type=int, default=1000, help="Number of items to fetch (default: 1000)")
     
     # Legacy arguments for compatibility
     parser.add_argument("--api-url", type=str, help="Ignored (now uses direct access)")

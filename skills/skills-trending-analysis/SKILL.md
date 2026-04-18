@@ -15,6 +15,7 @@ This Skill is designed to be **"Zero-Setup Ready"** by focusing on standard Pyth
 
 A keyword can be optionally specified for filtering.
 
+- `--limit`: Number of items to fetch (default: 1000).
 - With keyword: Filters the fetched items by the keyword.
 - Without keyword: Fetches the top trending items.
 
