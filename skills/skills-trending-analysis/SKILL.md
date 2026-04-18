@@ -1,13 +1,11 @@
 ---
 name: skills-trending-analysis
-description: Fetches trending skills directly from skills.sh, generates statistics, and creates a trend summary. Optimized for ultra-fast, direct execution without complex setup. Provides deep insights into the Agent Skills ecosystem.
+description: Fetches trending skills directly from skills.sh, generates statistics, and outputs a comprehensive trend report to the chat. Use this for ultra-fast, data-driven analysis of the Agent Skills ecosystem.
 ---
 
 # Skills Trending Analysis (Direct API)
 
-Fetches trending information from the `skills.sh` ecosystem by directly communicating with its internal JSON API.
-
-This Skill is optimized for maximum simplicity and speed. No browser, Chromium, or middleman servers are required.
+Fetches trending information from the `skills.sh` ecosystem by directly communicating with its internal JSON API and generating a premium report.
 
 ---
 
@@ -15,6 +13,7 @@ This Skill is optimized for maximum simplicity and speed. No browser, Chromium, 
 
 A keyword can be optionally specified for filtering.
 
+- `--limit`: Number of items to fetch (default: 1000).
 - With keyword: Filters the fetched items by the keyword.
 - Without keyword: Fetches the top trending items.
 
@@ -22,115 +21,118 @@ Examples: `swift`, `python`, `agent`
 
 ---
 
-# Output
+# Output & Deliverables
 
-Generates results including the following:
+The goal of this skill is to provide the user with a **final report in the chat**, not just generating data files.
 
-1. **Trending summary**: High-level overview of the current ecosystem state.
-2. **Top skills**: Ranking of the most popular skills by install count.
-3. **Keyword ranking**: Analysis of dominant topics and technologies.
-4. **Developer ranking**: Insights into top creators and their specialized areas.
-5. **Ecosystem analysis**: Market concentration and growth tendencies.
-
-Statistical processing is performed in Python to ensure accuracy, and the AI provides premium insights based on those results.
+1. **Data Artifacts (Internal)**: JSON files in `tmp/` containing the raw and analyzed statistics.
+2. **Final Report (User-Facing)**: A structured summary output directly to the chat, following the specific format in `references/output-format.md`.
 
 ---
 
-# Execution Steps (Smart Flow)
+# Standard Workflow (Essential Steps)
 
-### 1. Try Direct Execution (Fastest)
+To complete this skill, you MUST execute ALL three steps below in order.
 
-Most environments already have the necessary `requests` library. Try running directly:
-
+### Step 1: Data Fetching (Direct API)
+Fetch the trending data from the ecosystem.
 ```bash
-# Fetch data
 python3 scripts/fetch_trending.py --limit 1000
+```
+*Artifact: `tmp/trending.json`*
 
-# Perform statistical analysis
+### Step 2: Statistical Analysis
+Process the fetched data to generate ranked statistics and concentration metrics.
+```bash
 python3 scripts/analyze_trending.py --input tmp/trending.json --output tmp/trending_analysis.json
 ```
+*Artifact: `tmp/trending_analysis.json`*
+
+### Step 3: Final Report Generation (Required)
+1. Read the analyzed results from `tmp/trending_analysis.json`.
+2. **Read `references/output-format.md`** to confirm the required report structure and rules.
+3. Output the final report directly to the chat. **The task is NOT complete until this report is visible to the user.**
 
 ---
 
-### 2. If it fails (Environment Setup)
+# Definition of Completion
+This skill is considered "SUCCESSFUL" only when:
+- The statistical scripts have executed without error.
+- The AI has provided a long-form report in the chat that interprets the numerical data.
+- All numerical values in the report exactly match the `tmp/trending_analysis.json` output.
 
-If you get a `ModuleNotFoundError: No module named 'requests'`, then set up the environment:
+---
+
+# Environment Setup (If needed)
+
+If `requests` is missing from your environment, follow these steps:
 
 **Using uv (Recommended)**:
 ```bash
-uv venv
-source .venv/bin/activate
-uv pip install requests
+uv venv && source .venv/bin/activate && uv pip install requests
 ```
 
 **Using standard pip**:
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install requests
+python3 -m venv .venv && source .venv/bin/activate && pip install requests
 ```
 
 ---
 
-# Data Fetching Strategy
+# Statistical Analysis Specifications (Default)
 
-- **Direct API Access**: Communicates directly with `https://skills.sh/api/skills/all-time`.
-- **Standalone**: Does not require any background processes or external servers.
-- **Efficient**: Uses pagination to fetch the requested number of items.
-- **Cached**: Results are cached locally for 1 hour to improve UX.
+Running analyze_trending.py with default arguments (suffix phrase merge off, top 20 items) generates the following.
 
----
+**summary**
 
-# Statistical Analysis Specifications
+- total_skills
+- total_installs
+- unique_developers
+- unique_keywords
 
-The `analyze_trending.py` script generates a detailed JSON report. The AI should use the following data points:
+**skill_ranking**
 
-- **summary**: 
-    - `total_skills`: Count of items fetched.
-    - `total_installs`: Sum of all installs.
-    - `unique_developers`: Number of distinct creators.
-    - `unique_keywords`: Number of distinct topics found in titles.
-- **skill_ranking**: 
-    - Top items sorted by `installs`.
-    - Identifying "Hero Skills" that define the current trend.
-- **keyword_ranking**: 
-    - `keyword_ranking_by_installs`: Keywords associated with the highest install volume.
-    - `keyword_ranking_by_skill_count`: Keywords with the most varied skill entries.
-- **developer_ranking**: 
-    - Ranking by `total_installs`.
-    - Lists `top_keywords` for each developer to identify their expertise.
-- **concentration**: 
-    - `top_10_skill_install_share`: How much of the market is held by the top 10 items.
-    - `top_10_developer_install_share`: Market dominance of the top 10 creators.
+Ranked in descending order of installs. Fields: rank, title, developer, installs
+
+**keyword_ranking** (Default: simple split)
+
+Splits titles by `-` into keywords. Only when `--suffix-merge` is specified, specific suffixes (practices, review, design, generation, browser) are merged with the previous word into a 2-word phrase (e.g., best-practices, code-review).
+
+Rules:
+
+- Convert to lowercase
+- Exclude empty strings
+- Count identical keywords within the same skill only once
+- If a phrase is used, do not count the original words as separate keywords
+
+There are 2 rankings: `keyword_ranking_by_installs` and `keyword_ranking_by_skill_count`. Fields for each: rank, keyword, skill_count, total_installs
+
+**developer_ranking**
+
+Aggregated by the developer. Fields: rank, developer, skill_count, total_installs, **top_keywords**, **top_skills_by_installs**. top_keywords are frequent keywords appearing in the developer's skill titles. top_skills_by_installs are a maximum of 3 skills with the highest installs (title, installs).
+
+**concentration**
+
+- top_10_skill_install_share: Sum of installs of top 10 skills / total_installs (0~1)
+- top_10_developer_install_share: Sum of total_installs of top 10 developers / total_installs (0~1)
 
 ---
 
 # Final Summary by AI
 
-Based on the Python analysis results, the AI will generate a comprehensive report including:
+Based on the Python analysis results, the AI will generate:
 
-1. **Mainstream technologies and topics**: What is currently "hyped" in the ecosystem.
-2. **Trends among high-install skills**: Shared characteristics of the most successful skills.
-3. **Keyword concentration tendencies**: Whether the market is focusing on specific tech (e.g., React, AI, Automation).
-4. **Developer Expertise**: Short descriptions of each top developer's specialized area based on their keywords.
-5. **Overall summary and insights**: Actionable conclusion and future outlook.
+1. Mainstream technologies and topics
+2. Trends among skills with high install counts
+3. Keyword concentration tendencies
+4. Short descriptions of each developer's area of expertise
+5. Overall summary and insights
 
-> [!IMPORTANT]
-> The AI must not recalculate statistical values itself. Use the output of `analyze_trending.py` as the absolute source of truth for all numerical data.
-
----
-
-# Principles Upon Failure
-
-If script execution fails:
-1. Check if the direct API endpoint has changed.
-2. Verify network connectivity.
-3. Check if the local cache (`tmp/trending.json`) can be used as a fallback.
+The AI must not recalculate statistical values itself. Use the output of analyze_trending.py as the basis for numbers. See `references/output-format.md` for details.
 
 ---
 
 # Referenced Files
-
 - requirements.txt
 - scripts/fetch_trending.py
 - scripts/analyze_trending.py
